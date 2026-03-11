@@ -256,6 +256,42 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 @media(max-width:400px){
   .iphone{display:none}
 }
+
+.pricing{padding:120px 40px;background:var(--cream);text-align:center;}
+.pricing-eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);font-weight:400;margin-bottom:20px;}
+.pricing-title{font-family:"Cormorant Garamond",serif;font-size:clamp(36px,4vw,56px);font-weight:300;line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin-bottom:12px;}
+.pricing-title em{font-style:italic;color:var(--green);}
+.pricing-sub{font-size:15px;color:var(--ink-60);line-height:1.7;max-width:400px;margin:0 auto 40px;}
+.pricing-toggle{display:inline-flex;background:var(--beige);border-radius:100px;padding:4px;gap:2px;margin-bottom:64px;}
+.toggle-btn{font-family:"Jost",sans-serif;font-size:13px;font-weight:400;color:var(--ink-60);background:none;border:none;padding:8px 20px;border-radius:100px;cursor:pointer;transition:all .2s;letter-spacing:.02em;}
+.toggle-btn.active{background:var(--ink);color:var(--cream);}
+.toggle-save{background:var(--green);color:#fff;font-size:10px;letter-spacing:.06em;padding:2px 7px;border-radius:100px;margin-left:6px;font-weight:500;}
+.pricing-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:980px;margin:0 auto;}
+.pricing-card{background:#fff;border:1px solid var(--ink-12);border-radius:20px;padding:40px 36px;text-align:left;position:relative;transition:box-shadow .3s;}
+.pricing-card:hover{box-shadow:0 12px 40px rgba(26,26,24,.08);}
+.pricing-card-featured{background:var(--dark-green);border-color:var(--dark-green);}
+.plan-badge{font-size:10px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;color:var(--green);background:rgba(22,131,85,.12);padding:4px 12px;border-radius:100px;display:inline-block;margin-bottom:20px;}
+.pricing-card-featured .plan-badge{color:var(--light-green);background:rgba(216,255,224,.12);}
+.plan-name{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:300;color:var(--ink);margin-bottom:12px;letter-spacing:-.01em;}
+.pricing-card-featured .plan-name{color:var(--cream);}
+.plan-price{margin-bottom:8px;}
+.price-amount{font-family:"Cormorant Garamond",serif;font-size:48px;font-weight:300;color:var(--ink);letter-spacing:-.03em;line-height:1;}
+.pricing-card-featured .price-amount{color:#fff;}
+.price-period{font-size:13px;color:var(--ink-60);font-weight:300;margin-left:2px;}
+.pricing-card-featured .price-period{color:rgba(245,242,238,.5);}
+.plan-desc{font-size:13px;color:var(--ink-60);line-height:1.6;margin-bottom:28px;min-height:36px;}
+.pricing-card-featured .plan-desc{color:rgba(245,242,238,.55);}
+.plan-features{list-style:none;padding:0;margin:0 0 36px;display:flex;flex-direction:column;gap:10px;}
+.plan-features li{font-size:13px;color:var(--ink-60);line-height:1.5;padding-left:20px;position:relative;}
+.plan-features li::before{content:"";position:absolute;left:0;top:6px;width:6px;height:6px;border-radius:50%;background:var(--green);}
+.pricing-card-featured .plan-features li{color:rgba(245,242,238,.7);}
+.pricing-card-featured .plan-features li::before{background:var(--light-green);}
+.plan-cta{display:block;text-align:center;padding:14px 24px;border-radius:100px;font-family:"Jost",sans-serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:400;text-decoration:none;transition:all .2s;}
+.plan-cta-primary{background:var(--green);color:#fff;}
+.plan-cta-primary:hover{background:var(--dark-green);}
+.plan-cta-secondary{background:none;border:1px solid var(--ink-20);color:var(--ink);}
+.plan-cta-secondary:hover{border-color:var(--ink);background:var(--ink);color:var(--cream);}
+@media(max-width:860px){.pricing-cards{grid-template-columns:1fr;max-width:420px;}}
 </style>
 </head>
 <body>
@@ -269,6 +305,7 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
   <div class="nav-right">
     <a href="#how" class="nav-link">How it works</a>
     <a href="#philosophy" class="nav-link">Philosophy</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
     <a href="https://www.denbighpartners.com" class="nav-link" target="_blank">About</a>
     <a href="https://getpicasso.ai" class="nav-link nav-signup" target="_blank">Sign up</a>
   </div>
@@ -525,6 +562,46 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
   </div>
 </section>
 
+
+<section class="pricing" id="pricing">
+  <div class="pricing-eyebrow sr">Simple pricing</div>
+  <h2 class="pricing-title sr sr-delay-1">One clear price.<br><em>No surprises.</em></h2>
+  <p class="pricing-sub sr sr-delay-2">Start free. Upgrade when you are ready. Cancel anytime.</p>
+  <div class="pricing-toggle sr sr-delay-3">
+    <button class="toggle-btn active" onclick="setPricing('monthly',this)">Monthly</button>
+    <button class="toggle-btn" onclick="setPricing('annual',this)">Annual <span class="toggle-save">Save 17%</span></button>
+  </div>
+  <div class="pricing-cards sr sr-delay-3">
+    <div class="pricing-card">
+      <div class="plan-name">Growth</div>
+      <div class="plan-price"><span class="price-amount monthly-price">$500</span><span class="price-amount annual-price" style="display:none">$415</span><span class="price-period">/month</span></div>
+      <div class="plan-desc">For single-location businesses</div>
+      <ul class="plan-features">
+        <li>Daily Morning Brief</li><li>Cash flow monitoring</li><li>Bank &amp; POS integration</li><li>QuickBooks &amp; Shopify sync</li><li>Monthly financial reports</li><li>Email support</li>
+      </ul>
+      <a href="https://getpicasso.ai" class="plan-cta plan-cta-secondary">Get started</a>
+    </div>
+    <div class="pricing-card pricing-card-featured">
+      <div class="plan-badge">Most popular</div>
+      <div class="plan-name">Scale</div>
+      <div class="plan-price"><span class="price-amount monthly-price">$400</span><span class="price-amount annual-price" style="display:none">$332</span><span class="price-period">/location/month</span></div>
+      <div class="plan-desc">For multi-location businesses (2-10 locations)</div>
+      <ul class="plan-features">
+        <li>Everything in Growth</li><li>Multi-location dashboard</li><li>Location benchmarking</li><li>Franchise analytics</li><li>Team collaboration</li><li>Priority support</li>
+      </ul>
+      <a href="https://getpicasso.ai" class="plan-cta plan-cta-primary">Get started</a>
+    </div>
+    <div class="pricing-card">
+      <div class="plan-name">Enterprise</div>
+      <div class="plan-price"><span class="price-amount">Custom</span></div>
+      <div class="plan-desc">For 10+ locations or enterprise groups</div>
+      <ul class="plan-features">
+        <li>Everything in Scale</li><li>Custom analytics &amp; reporting</li><li>Dedicated account manager</li><li>Custom integrations</li><li>SLA guarantees</li><li>White-glove onboarding</li>
+      </ul>
+      <a href="mailto:hello@denbighpartners.com" class="plan-cta plan-cta-secondary">Contact us</a>
+    </div>
+  </div>
+</section>
 <!-- CLOSING CTA -->
 <section class="closing" id="signup">
   <div class="closing-eyebrow sr">Ready?</div>
@@ -575,6 +652,7 @@ const obs = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
 }, { threshold: 0.1 });
 document.querySelectorAll('.sr').forEach(el => obs.observe(el));
+function setPricing(type,btn){document.querySelectorAll(".toggle-btn").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const m=document.querySelectorAll(".monthly-price"),a=document.querySelectorAll(".annual-price");if(type==="annual"){m.forEach(el=>el.style.display="none");a.forEach(el=>el.style.display="inline")}else{m.forEach(el=>el.style.display="inline");a.forEach(el=>el.style.display="none")}}
 </script>
 </body>
 </html>
