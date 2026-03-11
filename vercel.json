@@ -1,16 +1,7 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "has": [{"type": "host", "value": "getpicasso.ai"}],
-      "destination": "https://penny-shopify.whitepebble-ab52f0cb.eastus.azurecontainerapps.io/",
-      "permanent": false
-    },
-    {
-      "source": "/(.*)",
-      "has": [{"type": "host", "value": "getpicasso.ai"}],
-      "destination": "https://penny-shopify.whitepebble-ab52f0cb.eastus.azurecontainerapps.io/$1",
-      "permanent": false
-    }
+  "rewrites": [
+    { "source": "/privacy", "destination": "/privacy.html" },
+    { "source": "/terms", "destination": "/terms.html" },
+    { "source": "/eula", "destination": "/eula.html" }
   ]
 }
