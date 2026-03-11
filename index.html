@@ -344,24 +344,26 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 @media(max-width:500px){.int-grid{grid-template-columns:1fr;}}
 
 /* ── INTEGRATIONS ───────────────────────────────────────────────────── */
-.integrations{padding:80px 40px;background:var(--cream);max-width:1100px;margin:0 auto;}
+.integrations{padding:100px 40px;background:var(--cream);}
+.integrations-inner{max-width:960px;margin:0 auto;}
 .integrations .section-label{text-align:center;margin-bottom:12px;}
 .int-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:400;text-align:center;color:var(--ink);line-height:1.15;margin-bottom:12px;}
 .int-title em{font-style:italic;color:var(--green);}
-.int-sub{text-align:center;font-family:'Jost',sans-serif;font-size:15px;font-weight:300;color:var(--ink-60);max-width:480px;margin:0 auto 48px;line-height:1.7;}
-.int-group{margin-bottom:36px;}
-.int-group-label{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:10px;}
-.int-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;}
-.int-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px;}
-.int-card-left{display:flex;align-items:center;gap:10px;min-width:0;flex:1;}
-.int-logo{width:28px;height:28px;border-radius:6px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
-.int-logo svg{width:28px;height:28px;display:block;}
-.int-logo img{width:28px;height:28px;object-fit:contain;border-radius:6px;}
-.int-card-name{font-family:'Jost',sans-serif;font-size:12px;font-weight:500;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.int-card-desc{font-family:'Jost',sans-serif;font-size:10px;font-weight:300;color:var(--ink-60);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.int-badge-live{font-family:'Jost',sans-serif;font-size:8px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#168355;background:#D8FFE0;padding:2px 7px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
-.int-badge-soon{font-family:'Jost',sans-serif;font-size:8px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-40);background:rgba(0,0,0,.04);padding:2px 7px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
-.int-footnote{text-align:center;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;color:var(--ink-60);margin-top:36px;line-height:1.8;}
+.int-sub{text-align:center;font-family:'Jost',sans-serif;font-size:15px;font-weight:300;color:var(--ink-60);max-width:480px;margin:0 auto 56px;line-height:1.7;}
+.int-group{margin-bottom:44px;}
+.int-group-label{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:12px;}
+.int-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.int-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+.int-card-left{display:flex;align-items:center;gap:16px;min-width:0;flex:1;}
+.int-logo{width:40px;height:40px;border-radius:10px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.int-logo svg{width:40px;height:40px;display:block;}
+.int-logo img{width:40px;height:40px;object-fit:contain;border-radius:10px;}
+.int-card-name{font-family:'Jost',sans-serif;font-size:14px;font-weight:500;color:var(--ink);margin-bottom:2px;}
+.int-card-desc{font-family:'Jost',sans-serif;font-size:12px;font-weight:300;color:var(--ink-60);}
+.int-badge-live{font-family:'Jost',sans-serif;font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#168355;background:#D8FFE0;padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.int-badge-soon{font-family:'Jost',sans-serif;font-size:9px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-40);background:rgba(0,0,0,.04);padding:4px 10px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.int-footnote{text-align:center;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;color:var(--ink-60);margin-top:40px;line-height:1.8;}
+@media(max-width:600px){.int-grid{grid-template-columns:1fr;}}
 
 </style>
 </head>
@@ -689,6 +691,7 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 
 
 <section class="integrations" id="integrations">
+<div class="integrations-inner">
   <div class="section-label sr">Works with your stack</div>
   <h2 class="int-title sr sr-delay-1">Every tool you already use.<br><em>Connected.</em></h2>
   <p class="int-sub sr sr-delay-2">Penny reads from your existing systems. No migration. No new software to learn. Connect once and go.</p>
@@ -697,6 +700,7 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
   <div class="int-group sr"><div class="int-group-label">Banking &amp; Analytics</div><div class="int-grid"><div class="int-card sr"><div class="int-card-left"><div class="int-logo"><img src="/logos/plaid.png" alt="Plaid"></div><div><div class="int-card-name">Plaid</div><div class="int-card-desc">Bank connections</div></div></div><span class="int-badge-live">Live</span></div><div class="int-card sr"><div class="int-card-left"><div class="int-logo"><img src="/logos/triplewhale.png" alt="Triple Whale"></div><div><div class="int-card-name">Triple Whale</div><div class="int-card-desc">E-commerce analytics</div></div></div><span class="int-badge-live">Live</span></div></div></div>
   <div class="int-group sr"><div class="int-group-label">Payroll</div><div class="int-grid"><div class="int-card sr"><div class="int-card-left"><div class="int-logo"><svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#F45D48"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c2.76 0 5.26-1.12 7.07-2.93l-2.12-2.12A6.938 6.938 0 0112 19c-3.87 0-7-3.13-7-7s3.13-7 7-7c2.5 0 4.68 1.32 5.91 3.3H15v3h7V4h-3v1.7C17.34 3.68 14.84 2 12 2z" fill="white"/></svg></div><div><div class="int-card-name">Gusto</div><div class="int-card-desc">Payroll & benefits</div></div></div><span class="int-badge-live">Live</span></div><div class="int-card sr"><div class="int-card-left"><div class="int-logo"><svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#EE2722"/><path d="M4 17l4.5-10h2l4.5 10h-2.2l-.9-2.2H7.1L6.2 17H4zm3.8-3.8h2.9l-1.45-3.6-1.45 3.6zm6.7-6.2h3.5c2.8 0 4.5 1.8 4.5 5s-1.7 5-4.5 5H14.5V7zm2 8.4h1.2c1.6 0 2.6-1.1 2.6-3.4s-1-3.4-2.6-3.4h-1.2v6.8z" fill="white"/></svg></div><div><div class="int-card-name">ADP</div><div class="int-card-desc">Enterprise payroll</div></div></div><span class="int-badge-soon">Soon</span></div><div class="int-card sr"><div class="int-card-left"><div class="int-logo"><svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect width="24" height="24" rx="5" fill="#004B8D"/><path d="M3 8h4.5c2.2 0 3.5 1.1 3.5 3s-1.3 3-3.5 3H5v3H3V8zm2 4.5h2c.9 0 1.5-.4 1.5-1.5S7.9 9.5 7 9.5H5v3zm6-4.5h4c2.8 0 4.5 1.9 4.5 5s-1.7 5-4.5 5h-4V8zm2 8.4h1.7c1.6 0 2.6-1.1 2.6-3.4S14.3 9.6 12.7 9.6H11v6.8z" fill="white"/></svg></div><div><div class="int-card-name">Paychex</div><div class="int-card-desc">Payroll services</div></div></div><span class="int-badge-soon">Soon</span></div><div class="int-card sr"><div class="int-card-left"><div class="int-logo"><img src="/logos/rippling.png" alt="Rippling"></div><div><div class="int-card-name">Rippling</div><div class="int-card-desc">HR & payroll</div></div></div><span class="int-badge-soon">Soon</span></div></div></div>
   <p class="int-footnote sr">Don't see your platform? More integrations are added every month.<br>Contact us and we will prioritize yours.</p>
+</div>
 </section>
 <section class="pricing" id="pricing">
   <div class="pricing-eyebrow sr">Simple pricing</div>
