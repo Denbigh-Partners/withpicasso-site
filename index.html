@@ -292,6 +292,36 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 .plan-cta-secondary{background:none;border:1px solid var(--ink-20);color:var(--ink);}
 .plan-cta-secondary:hover{border-color:var(--ink);background:var(--ink);color:var(--cream);}
 @media(max-width:860px){.pricing-cards{grid-template-columns:1fr;max-width:420px;}}
+
+.healthscore{padding:120px 64px;background:var(--beige);border-top:1px solid var(--ink-20);}
+.hs-inner{max-width:1080px;margin:0 auto;}
+.hs-header{text-align:center;margin-bottom:72px;}
+.hs-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5vw,64px);font-weight:300;line-height:1.05;letter-spacing:-.02em;margin-bottom:20px;}
+.hs-title em{font-style:italic;color:var(--green);}
+.hs-sub{font-size:15px;color:var(--ink-60);max-width:580px;margin:0 auto;line-height:1.8;}
+.hs-score-display{display:flex;align-items:center;gap:48px;margin-bottom:72px;justify-content:center;}
+.hs-dial{text-align:center;background:var(--green-dark);color:#fff;border-radius:16px;padding:40px 56px;}
+.hs-dial-num{font-family:'Cormorant Garamond',serif;font-size:80px;font-weight:300;line-height:1;letter-spacing:-.04em;}
+.hs-dial-label{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-top:8px;}
+.hs-dial-sub{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px;}
+.hs-bands{display:flex;flex-direction:column;gap:6px;}
+.hs-band{display:flex;align-items:center;gap:12px;padding:8px 16px;border-radius:6px;}
+.hs-band-range{font-size:12px;font-weight:400;min-width:52px;color:var(--ink);}
+.hs-band-name{font-size:12px;letter-spacing:.1em;text-transform:uppercase;}
+.hs-healthy{background:rgba(22,131,85,.12);}.hs-healthy .hs-band-name{color:var(--green);}
+.hs-good{background:rgba(22,131,85,.07);}.hs-good .hs-band-name{color:var(--green);}
+.hs-watch{background:rgba(212,132,42,.1);}.hs-watch .hs-band-name{color:var(--amber);}
+.hs-concern{background:rgba(199,80,80,.08);}.hs-concern .hs-band-name{color:var(--soft-red);}
+.hs-critical{background:rgba(199,80,80,.14);}.hs-critical .hs-band-name{color:var(--soft-red);}
+.hs-pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-bottom:48px;}
+.hs-pillar{background:var(--cream);padding:36px 28px;}
+.hs-pillar-weight{font-family:'Cormorant Garamond',serif;font-size:36px;font-weight:300;color:var(--green);letter-spacing:-.02em;margin-bottom:12px;}
+.hs-pillar-name{font-size:13px;font-weight:400;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:12px;}
+.hs-pillar-body{font-size:14px;color:var(--ink-60);line-height:1.7;margin-bottom:16px;}
+.hs-pillar-metrics{font-size:11px;letter-spacing:.08em;color:var(--sage);text-transform:uppercase;}
+.hs-footnote{font-size:14px;color:var(--ink-60);text-align:center;max-width:600px;margin:0 auto;line-height:1.8;font-style:italic;}
+@media(max-width:900px){.hs-pillars{grid-template-columns:repeat(2,1fr);}.hs-score-display{flex-direction:column;}.healthscore{padding:80px 32px;}}
+@media(max-width:500px){.hs-pillars{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -304,7 +334,7 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
   </a>
   <div class="nav-right">
     <a href="#how" class="nav-link">How it works</a>
-    <a href="#philosophy" class="nav-link">Philosophy</a>
+    <a href="#health" class="nav-link">Health Score</a><a href="#philosophy" class="nav-link">Philosophy</a>
     <a href="#pricing" class="nav-link">Pricing</a>
     <a href="https://www.denbighpartners.com" class="nav-link" target="_blank">About</a>
     <a href="https://getpicasso.ai" class="nav-link nav-signup" target="_blank">Sign up</a>
@@ -528,6 +558,58 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 </section>
 
 <!-- PHILOSOPHY -->
+
+<!-- HEALTH SCORE -->
+<section class="healthscore" id="health">
+  <div class="hs-inner">
+    <div class="hs-header sr">
+      <div class="section-label">Business Health Score</div>
+      <h2 class="hs-title">The VO2 Max<br><em>for your business.</em></h2>
+      <p class="hs-sub">Every morning, Penny calculates a single 0-100 score across every dimension of your business. Not a vanity metric. A precise, pillar-by-pillar diagnosis built from your real numbers, calibrated to your industry.</p>
+    </div>
+    <div class="hs-score-display sr sr-delay-1">
+      <div class="hs-dial">
+        <div class="hs-dial-num">84</div>
+        <div class="hs-dial-label">Strong</div>
+        <div class="hs-dial-sub">Top 18% this month</div>
+      </div>
+      <div class="hs-bands">
+        <div class="hs-band hs-healthy"><span class="hs-band-range">80-100</span><span class="hs-band-name">Healthy</span></div>
+        <div class="hs-band hs-good"><span class="hs-band-range">60-79</span><span class="hs-band-name">Good</span></div>
+        <div class="hs-band hs-watch"><span class="hs-band-range">40-59</span><span class="hs-band-name">Watch</span></div>
+        <div class="hs-band hs-concern"><span class="hs-band-range">20-39</span><span class="hs-band-name">Concern</span></div>
+        <div class="hs-band hs-critical"><span class="hs-band-range">0-19</span><span class="hs-band-name">Critical</span></div>
+      </div>
+    </div>
+    <div class="hs-pillars">
+      <div class="hs-pillar sr">
+        <div class="hs-pillar-weight">30%</div>
+        <div class="hs-pillar-name">Financial Health</div>
+        <div class="hs-pillar-body">Cash flow, gross margins, debt coverage, and runway. The foundation. Can you pay your bills, stay profitable, and survive a slow month?</div>
+        <div class="hs-pillar-metrics">Gross margin · EBITDA · Cash runway · Current ratio</div>
+      </div>
+      <div class="hs-pillar sr sr-delay-1">
+        <div class="hs-pillar-weight">25%</div>
+        <div class="hs-pillar-name">Operational Efficiency</div>
+        <div class="hs-pillar-body">How well does your business actually run? Inventory turns, fulfillment speed, and cost control, calibrated to your specific industry.</div>
+        <div class="hs-pillar-metrics">Inventory turns · Fulfillment rate · Operating expense ratio</div>
+      </div>
+      <div class="hs-pillar sr sr-delay-2">
+        <div class="hs-pillar-weight">25%</div>
+        <div class="hs-pillar-name">Customer Health</div>
+        <div class="hs-pillar-body">Are your customers worth keeping? Repeat rate, lifetime value versus acquisition cost, and whether your customer base is growing or quietly shrinking.</div>
+        <div class="hs-pillar-metrics">Repeat rate · LTV/CAC · Customer growth trend</div>
+      </div>
+      <div class="hs-pillar sr sr-delay-3">
+        <div class="hs-pillar-weight">20%</div>
+        <div class="hs-pillar-name">Growth and Risk</div>
+        <div class="hs-pillar-body">Revenue momentum, customer concentration, and channel diversification. Growing fast is only good if you are not dangerously exposed while you do it.</div>
+        <div class="hs-pillar-metrics">Revenue trend · Customer concentration · Channel mix</div>
+      </div>
+    </div>
+    <p class="hs-footnote sr">Scores adapt automatically to your industry. A dental practice and an apparel store have different definitions of healthy. Penny knows the difference. The more integrations you connect, the sharper the score gets.</p>
+  </div>
+</section>
 <section class="philosophy" id="philosophy">
   <div class="phil-inner">
     <div class="phil-left sr">
