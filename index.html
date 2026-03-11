@@ -635,6 +635,7 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 
 <script>
 const nav = document.getElementById('nav');
+window.scrollTo(0,0);
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), {passive:true});
 
 const ham = document.getElementById('ham');
