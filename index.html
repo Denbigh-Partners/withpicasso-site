@@ -342,6 +342,27 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 .int-footnote{text-align:center;font-size:13px;color:var(--ink-60);margin-top:48px;line-height:1.8;}
 @media(max-width:900px){.int-grid{grid-template-columns:repeat(2,1fr);}.integrations{padding:80px 32px;}}
 @media(max-width:500px){.int-grid{grid-template-columns:1fr;}}
+
+/* ── INTEGRATIONS ────────────────────────────────────────────────────── */
+.integrations{padding:120px 40px;background:var(--cream);}
+.integrations .section-label{text-align:center;margin-bottom:12px;}
+.int-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,52px);font-weight:400;text-align:center;color:var(--ink);line-height:1.15;margin-bottom:16px;}
+.int-title em{font-style:italic;color:var(--green);}
+.int-sub{text-align:center;font-family:'Jost',sans-serif;font-size:15px;font-weight:300;color:var(--ink-60);max-width:520px;margin:0 auto 72px;line-height:1.8;}
+.int-group{margin-bottom:56px;}
+.int-group-label{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:20px;}
+.int-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
+.int-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;transition:box-shadow .2s;}
+.int-card:hover{box-shadow:0 4px 24px rgba(0,0,0,.07);}
+.int-card-left{display:flex;align-items:center;gap:14px;}
+.int-logo{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#f4f2ee;flex-shrink:0;overflow:hidden;}
+.int-logo img,.int-logo svg{width:28px;height:28px;object-fit:contain;}
+.int-card-name{font-family:'Jost',sans-serif;font-size:14px;font-weight:500;color:var(--ink);margin-bottom:2px;}
+.int-card-desc{font-family:'Jost',sans-serif;font-size:12px;font-weight:300;color:var(--ink-60);}
+.int-badge-live{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:var(--green-light,#D8FFE0);padding:4px 10px;border-radius:20px;white-space:nowrap;}
+.int-badge-soon{font-family:'Jost',sans-serif;font-size:10px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-40);background:rgba(0,0,0,.04);padding:4px 10px;border-radius:20px;white-space:nowrap;}
+.int-footnote{text-align:center;font-family:'Jost',sans-serif;font-size:14px;font-weight:300;color:var(--ink-60);margin-top:48px;line-height:1.8;}
+
 </style>
 </head>
 <body>
@@ -668,51 +689,215 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 
 
 <section class="integrations" id="integrations">
-  <div class="int-inner">
-    <div class="int-header sr">
-      <div class="section-label">Integrations</div>
-      <h2 class="int-title">Connects to the tools<br><em>you already use.</em></h2>
-      <p class="int-sub">Penny works with your existing stack. No migration, no new software to learn. Connect once and she does the rest.</p>
+  <div class="section-label sr">Works with your stack</div>
+  <h2 class="int-title sr sr-delay-1">Every tool you already use.<br><em>Connected.</em></h2>
+  <p class="int-sub sr sr-delay-2">Penny reads from your existing systems. No migration. No new software to learn. Just connect and go.</p>
+
+  <div class="int-group sr">
+    <div class="int-group-label">Accounting</div>
+    <div class="int-grid">
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#2CA01C"/><path d="M20 8C13.37 8 8 13.37 8 20s5.37 12 12 12 12-5.37 12-12S26.63 8 20 8zm0 4a3 3 0 013 3v10a3 3 0 01-6 0V15a3 3 0 013-3z" fill="#fff"/></svg></div>
+            <div>
+              <div class="int-card-name">QuickBooks Online</div>
+              <div class="int-card-desc">Accounting & bookkeeping</div>
+            </div>
+          </div>
+          <span class="int-badge-live">Live</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#13B5EA"/><path d="M13 14l4.5 6L13 26h3.2l2.9-4 2.9 4H25l-4.5-6 4.5-6h-3.2l-2.9 4-2.9-4H13z" fill="#fff"/></svg></div>
+            <div>
+              <div class="int-card-name">Xero</div>
+              <div class="int-card-desc">Cloud accounting</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#D0021B"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="16" font-family="Arial" font-weight="bold">R3</text></svg></div>
+            <div>
+              <div class="int-card-name">Restaurant365</div>
+              <div class="int-card-desc">Restaurant accounting</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
     </div>
-    <div class="int-group sr">
-      <div class="int-group-label">Accounting</div>
-      <div class="int-grid">
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟩</div><div><div class="int-card-name">QuickBooks Online</div><div class="int-card-desc">Accounting &amp; bookkeeping</div></div></div><span class="int-badge-live">Live</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔵</div><div><div class="int-card-name">Xero</div><div class="int-card-desc">Cloud accounting</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟥</div><div><div class="int-card-name">Restaurant365</div><div class="int-card-desc">Restaurant accounting</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-      </div>
-    </div>
-    <div class="int-group sr sr-delay-1">
-      <div class="int-group-label">Point of Sale &amp; Industry Platform</div>
-      <div class="int-grid">
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟢</div><div><div class="int-card-name">Shopify</div><div class="int-card-desc">E-commerce &amp; DTC</div></div></div><span class="int-badge-live">Live</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🍞</div><div><div class="int-card-name">Toast</div><div class="int-card-desc">Restaurant POS</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔷</div><div><div class="int-card-name">Epicor Eagle</div><div class="int-card-desc">Retail &amp; wholesale</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">💚</div><div><div class="int-card-name">Mindbody</div><div class="int-card-desc">Fitness &amp; wellness</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟣</div><div><div class="int-card-name">Zenoti</div><div class="int-card-desc">Salon, spa &amp; wellness</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🦷</div><div><div class="int-card-name">Open Dental</div><div class="int-card-desc">Dental practice</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">💊</div><div><div class="int-card-name">PatientNow</div><div class="int-card-desc">Med spa &amp; aesthetics</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">💅</div><div><div class="int-card-name">Vagaro</div><div class="int-card-desc">Salon &amp; spa management</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-      </div>
-    </div>
-    <div class="int-group sr sr-delay-2">
-      <div class="int-group-label">Banking &amp; Analytics</div>
-      <div class="int-grid">
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔗</div><div><div class="int-card-name">Plaid</div><div class="int-card-desc">Bank connections</div></div></div><span class="int-badge-live">Live</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🐋</div><div><div class="int-card-name">Triple Whale</div><div class="int-card-desc">E-commerce analytics</div></div></div><span class="int-badge-live">Live</span></div>
-      </div>
-    </div>
-    <div class="int-group sr sr-delay-3">
-      <div class="int-group-label">Payroll</div>
-      <div class="int-grid">
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟠</div><div><div class="int-card-name">Gusto</div><div class="int-card-desc">Payroll &amp; benefits</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔴</div><div><div class="int-card-name">ADP</div><div class="int-card-desc">Enterprise payroll</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟡</div><div><div class="int-card-name">Paychex</div><div class="int-card-desc">Payroll services</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟤</div><div><div class="int-card-name">Rippling</div><div class="int-card-desc">HR &amp; payroll</div></div></div><span class="int-badge-soon">Coming soon</span></div>
-      </div>
-    </div>
-    <p class="int-footnote sr">Don't see your platform? More integrations are added every month.<br>Contact us and we will prioritize yours.</p>
   </div>
+
+  <div class="int-group sr">
+    <div class="int-group-label">Point of Sale & Industry Platform</div>
+    <div class="int-grid">
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#96BF48"/><path d="M27.5 13.2c0-.2-.1-.3-.3-.3-.2 0-2.5-.2-2.5-.2s-1.7-1.6-1.8-1.8c-.2-.1-.5-.1-.6 0l-.9.3c-.5-1.5-1.4-2.9-3-2.9h-.2C17.5 7.4 16.9 7 16.3 7c-4.7 0-6.9 5.9-7.6 8.9l-3.3 1c-1 .3-1 .3-1.2 1.3L2 28.9l14.7 2.8 8-1.7s-.2-17.5-.2-16.8zM21.2 12l-1.5.5c0-.5-.1-1.1-.3-1.6-.6-.1-1.1.5-1.4 1.2-.6.2-1.2.4-1.8.6.5-1.8 1.4-2.6 2.2-2.6.5 0 .9.3 1.2.8.2.3.4.7.6 1.1zm-3 1l3-.9c-.3-.8-.8-1.3-1.4-1.3-.8 0-1.3.9-1.6 2.2zm5.1 1l-7.2 2.2c.7-2.6 2.2-4.7 4-5.5.2.5.3 1.2.3 1.9l2.9-.9v2.3z" fill="#fff"/></svg></div>
+            <div>
+              <div class="int-card-name">Shopify</div>
+              <div class="int-card-desc">E-commerce & DTC</div>
+            </div>
+          </div>
+          <span class="int-badge-live">Live</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#FF4C00"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="13" font-family="Arial" font-weight="bold">toast</text></svg></div>
+            <div>
+              <div class="int-card-name">Toast</div>
+              <div class="int-card-desc">Restaurant POS</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#003DA5"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial" font-weight="bold">EPICOR</text></svg></div>
+            <div>
+              <div class="int-card-name">Epicor Eagle</div>
+              <div class="int-card-desc">Retail & wholesale</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#00A86B"/><path d="M12 20a8 8 0 1116 0 8 8 0 01-16 0zm8-5a1.5 1.5 0 00-1.5 1.5v7a1.5 1.5 0 003 0v-7A1.5 1.5 0 0020 15zm-4 2a1.5 1.5 0 00-1.5 1.5v5a1.5 1.5 0 003 0v-5A1.5 1.5 0 0016 17zm8 1a1.5 1.5 0 00-1.5 1.5v4a1.5 1.5 0 003 0v-4A1.5 1.5 0 0024 18z" fill="#fff"/></svg></div>
+            <div>
+              <div class="int-card-name">Mindbody</div>
+              <div class="int-card-desc">Fitness & wellness</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#7B2FBE"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial" font-weight="bold">zenoti</text></svg></div>
+            <div>
+              <div class="int-card-name">Zenoti</div>
+              <div class="int-card-desc">Salon, spa & wellness</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#0070C0"/><path d="M20 10c-3.3 0-6 2.7-6 6 0 2 1 3.8 2.5 4.9L15 30h10l-1.5-9.1C25 19.8 26 18 26 16c0-3.3-2.7-6-6-6zm0 2c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4z" fill="#fff"/></svg></div>
+            <div>
+              <div class="int-card-name">Open Dental</div>
+              <div class="int-card-desc">Dental practice</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#E8734A"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" font-weight="bold">Pnow</text></svg></div>
+            <div>
+              <div class="int-card-name">PatientNow</div>
+              <div class="int-card-desc">Med spa & aesthetics</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#3E4348"/><rect x="11" y="11" width="18" height="18" rx="2" fill="#fff"/><rect x="15" y="15" width="10" height="10" rx="1" fill="#3E4348"/></svg></div>
+            <div>
+              <div class="int-card-name">Square</div>
+              <div class="int-card-desc">POS & payments</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#FF6B35"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="11" font-family="Arial" font-weight="bold">vagaro</text></svg></div>
+            <div>
+              <div class="int-card-name">Vagaro</div>
+              <div class="int-card-desc">Salon & spa management</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+    </div>
+  </div>
+
+  <div class="int-group sr">
+    <div class="int-group-label">Banking & Analytics</div>
+    <div class="int-grid">
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#000"/><path d="M14 12h4v4h-4zm6 0h4v4h-4zm-8 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-8 6h4v4h-4zm6 0h4v4h-4z" fill="#fff"/></svg></div>
+            <div>
+              <div class="int-card-name">Plaid</div>
+              <div class="int-card-desc">Bank connections</div>
+            </div>
+          </div>
+          <span class="int-badge-live">Live</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#0A1628"/><path d="M20 10c-5.5 0-10 3.6-10 8 0 2.8 1.7 5.3 4.3 6.8L13 30h14l-1.3-5.2C28.3 23.3 30 20.8 30 18c0-4.4-4.5-8-10-8zm0 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2z" fill="#00C2FF"/></svg></div>
+            <div>
+              <div class="int-card-name">Triple Whale</div>
+              <div class="int-card-desc">E-commerce analytics</div>
+            </div>
+          </div>
+          <span class="int-badge-live">Live</span>
+        </div>
+    </div>
+  </div>
+
+  <div class="int-group sr">
+    <div class="int-group-label">Payroll</div>
+    <div class="int-grid">
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#F45D48"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="12" font-family="Arial" font-weight="bold">gusto</text></svg></div>
+            <div>
+              <div class="int-card-name">Gusto</div>
+              <div class="int-card-desc">Payroll & benefits</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#D10000"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="14" font-family="Arial" font-weight="bold">ADP</text></svg></div>
+            <div>
+              <div class="int-card-name">ADP</div>
+              <div class="int-card-desc">Enterprise payroll</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#F5A623"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" font-weight="bold">PAYCHEX</text></svg></div>
+            <div>
+              <div class="int-card-name">Paychex</div>
+              <div class="int-card-desc">Payroll services</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+        <div class="int-card sr">
+          <div class="int-card-left">
+            <div class="int-logo"><svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><rect width="40" height="40" rx="8" fill="#EAB308"/><text x="20" y="26" text-anchor="middle" fill="#fff" font-size="10" font-family="Arial" font-weight="bold">rippling</text></svg></div>
+            <div>
+              <div class="int-card-name">Rippling</div>
+              <div class="int-card-desc">HR & payroll</div>
+            </div>
+          </div>
+          <span class="int-badge-soon">Coming soon</span>
+        </div>
+    </div>
+  </div>
+
+  <p class="int-footnote sr">Don't see your platform? More integrations are added every month.<br>Contact us and we will prioritize yours.</p>
 </section>
 <section class="pricing" id="pricing">
   <div class="pricing-eyebrow sr">Simple pricing</div>
