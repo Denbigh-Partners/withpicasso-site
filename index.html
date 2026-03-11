@@ -322,6 +322,26 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 .hs-footnote{font-size:14px;color:var(--ink-60);text-align:center;max-width:600px;margin:0 auto;line-height:1.8;font-style:italic;}
 @media(max-width:900px){.hs-pillars{grid-template-columns:repeat(2,1fr);}.hs-score-display{flex-direction:column;}.healthscore{padding:80px 32px;}}
 @media(max-width:500px){.hs-pillars{grid-template-columns:1fr;}}
+
+.integrations{padding:120px 64px;background:var(--cream);border-top:1px solid var(--ink-20);}
+.int-inner{max-width:1080px;margin:0 auto;}
+.int-header{text-align:center;margin-bottom:80px;}
+.int-title{font-family:'Cormorant Garamond',serif;font-size:clamp(40px,5vw,64px);font-weight:300;line-height:1.05;letter-spacing:-.02em;margin-bottom:20px;}
+.int-title em{font-style:italic;color:var(--green);}
+.int-sub{font-size:15px;color:var(--ink-60);max-width:520px;margin:0 auto;line-height:1.8;}
+.int-group{margin-bottom:56px;}
+.int-group-label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--ink-20);}
+.int-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+.int-card{background:var(--beige);padding:24px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px;}
+.int-card-left{display:flex;align-items:center;gap:14px;}
+.int-card-icon{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;background:var(--cream);}
+.int-card-name{font-size:14px;font-weight:400;color:var(--ink);letter-spacing:-.01em;}
+.int-card-desc{font-size:11px;color:var(--ink-60);margin-top:2px;letter-spacing:.02em;}
+.int-badge-live{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:400;}
+.int-badge-soon{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-60);}
+.int-footnote{text-align:center;font-size:13px;color:var(--ink-60);margin-top:48px;line-height:1.8;}
+@media(max-width:900px){.int-grid{grid-template-columns:repeat(2,1fr);}.integrations{padding:80px 32px;}}
+@media(max-width:500px){.int-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -334,7 +354,7 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
   </a>
   <div class="nav-right">
     <a href="#how" class="nav-link">How it works</a>
-    <a href="#health" class="nav-link">Health Score</a><a href="#philosophy" class="nav-link">Philosophy</a>
+    <a href="#health" class="nav-link">Health Score</a><a href="#integrations" class="nav-link">Integrations</a><a href="#philosophy" class="nav-link">Philosophy</a>
     <a href="#pricing" class="nav-link">Pricing</a>
     <a href="https://www.denbighpartners.com" class="nav-link" target="_blank">About</a>
     <a href="https://getpicasso.ai" class="nav-link nav-signup" target="_blank">Sign up</a>
@@ -646,6 +666,54 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 </section>
 
 
+
+<section class="integrations" id="integrations">
+  <div class="int-inner">
+    <div class="int-header sr">
+      <div class="section-label">Integrations</div>
+      <h2 class="int-title">Connects to the tools<br><em>you already use.</em></h2>
+      <p class="int-sub">Penny works with your existing stack. No migration, no new software to learn. Connect once and she does the rest.</p>
+    </div>
+    <div class="int-group sr">
+      <div class="int-group-label">Accounting</div>
+      <div class="int-grid">
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟩</div><div><div class="int-card-name">QuickBooks Online</div><div class="int-card-desc">Accounting &amp; bookkeeping</div></div></div><span class="int-badge-live">Live</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔵</div><div><div class="int-card-name">Xero</div><div class="int-card-desc">Cloud accounting</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟥</div><div><div class="int-card-name">Restaurant365</div><div class="int-card-desc">Restaurant accounting</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+      </div>
+    </div>
+    <div class="int-group sr sr-delay-1">
+      <div class="int-group-label">Point of Sale &amp; Industry Platform</div>
+      <div class="int-grid">
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟢</div><div><div class="int-card-name">Shopify</div><div class="int-card-desc">E-commerce &amp; DTC</div></div></div><span class="int-badge-live">Live</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🍞</div><div><div class="int-card-name">Toast</div><div class="int-card-desc">Restaurant POS</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔷</div><div><div class="int-card-name">Epicor Eagle</div><div class="int-card-desc">Retail &amp; wholesale</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">💚</div><div><div class="int-card-name">Mindbody</div><div class="int-card-desc">Fitness &amp; wellness</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟣</div><div><div class="int-card-name">Zenoti</div><div class="int-card-desc">Salon, spa &amp; wellness</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🦷</div><div><div class="int-card-name">Open Dental</div><div class="int-card-desc">Dental practice</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">💊</div><div><div class="int-card-name">PatientNow</div><div class="int-card-desc">Med spa &amp; aesthetics</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">💅</div><div><div class="int-card-name">Vagaro</div><div class="int-card-desc">Salon &amp; spa management</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+      </div>
+    </div>
+    <div class="int-group sr sr-delay-2">
+      <div class="int-group-label">Banking &amp; Analytics</div>
+      <div class="int-grid">
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔗</div><div><div class="int-card-name">Plaid</div><div class="int-card-desc">Bank connections</div></div></div><span class="int-badge-live">Live</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🐋</div><div><div class="int-card-name">Triple Whale</div><div class="int-card-desc">E-commerce analytics</div></div></div><span class="int-badge-live">Live</span></div>
+      </div>
+    </div>
+    <div class="int-group sr sr-delay-3">
+      <div class="int-group-label">Payroll</div>
+      <div class="int-grid">
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟠</div><div><div class="int-card-name">Gusto</div><div class="int-card-desc">Payroll &amp; benefits</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🔴</div><div><div class="int-card-name">ADP</div><div class="int-card-desc">Enterprise payroll</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟡</div><div><div class="int-card-name">Paychex</div><div class="int-card-desc">Payroll services</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+        <div class="int-card"><div class="int-card-left"><div class="int-card-icon">🟤</div><div><div class="int-card-name">Rippling</div><div class="int-card-desc">HR &amp; payroll</div></div></div><span class="int-badge-soon">Coming soon</span></div>
+      </div>
+    </div>
+    <p class="int-footnote sr">Don't see your platform? More integrations are added every month.<br>Contact us and we will prioritize yours.</p>
+  </div>
+</section>
 <section class="pricing" id="pricing">
   <div class="pricing-eyebrow sr">Simple pricing</div>
   <h2 class="pricing-title sr sr-delay-1">One clear price.<br><em>No surprises.</em></h2>
