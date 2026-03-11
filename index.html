@@ -343,25 +343,25 @@ footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;j
 @media(max-width:900px){.int-grid{grid-template-columns:repeat(2,1fr);}.integrations{padding:80px 32px;}}
 @media(max-width:500px){.int-grid{grid-template-columns:1fr;}}
 
-/* ── INTEGRATIONS ────────────────────────────────────────────────────── */
-.integrations{padding:120px 40px;background:var(--cream);}
+/* ── INTEGRATIONS ───────────────────────────────────────────────────── */
+.integrations{padding:80px 40px;background:var(--cream);max-width:1100px;margin:0 auto;}
 .integrations .section-label{text-align:center;margin-bottom:12px;}
-.int-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,5vw,52px);font-weight:400;text-align:center;color:var(--ink);line-height:1.15;margin-bottom:16px;}
+.int-title{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:400;text-align:center;color:var(--ink);line-height:1.15;margin-bottom:12px;}
 .int-title em{font-style:italic;color:var(--green);}
-.int-sub{text-align:center;font-family:'Jost',sans-serif;font-size:15px;font-weight:300;color:var(--ink-60);max-width:520px;margin:0 auto 72px;line-height:1.8;}
-.int-group{margin-bottom:56px;}
-.int-group-label{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:20px;}
-.int-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;}
-.int-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;transition:box-shadow .2s;}
-.int-card:hover{box-shadow:0 4px 24px rgba(0,0,0,.07);}
-.int-card-left{display:flex;align-items:center;gap:14px;}
-.int-logo{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#f4f2ee;flex-shrink:0;overflow:hidden;}
-.int-logo img,.int-logo svg{width:28px;height:28px;object-fit:contain;}
-.int-card-name{font-family:'Jost',sans-serif;font-size:14px;font-weight:500;color:var(--ink);margin-bottom:2px;}
-.int-card-desc{font-family:'Jost',sans-serif;font-size:12px;font-weight:300;color:var(--ink-60);}
-.int-badge-live{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:var(--green-light,#D8FFE0);padding:4px 10px;border-radius:20px;white-space:nowrap;}
-.int-badge-soon{font-family:'Jost',sans-serif;font-size:10px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-40);background:rgba(0,0,0,.04);padding:4px 10px;border-radius:20px;white-space:nowrap;}
-.int-footnote{text-align:center;font-family:'Jost',sans-serif;font-size:14px;font-weight:300;color:var(--ink-60);margin-top:48px;line-height:1.8;}
+.int-sub{text-align:center;font-family:'Jost',sans-serif;font-size:15px;font-weight:300;color:var(--ink-60);max-width:480px;margin:0 auto 48px;line-height:1.7;}
+.int-group{margin-bottom:36px;}
+.int-group-label{font-family:'Jost',sans-serif;font-size:10px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);margin-bottom:10px;}
+.int-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;}
+.int-card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:12px;padding:12px 14px;display:flex;align-items:center;justify-content:space-between;gap:8px;}
+.int-card-left{display:flex;align-items:center;gap:10px;min-width:0;flex:1;}
+.int-logo{width:28px;height:28px;border-radius:6px;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.int-logo svg{width:28px;height:28px;display:block;}
+.int-logo img{width:28px;height:28px;object-fit:contain;border-radius:6px;}
+.int-card-name{font-family:'Jost',sans-serif;font-size:12px;font-weight:500;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.int-card-desc{font-family:'Jost',sans-serif;font-size:10px;font-weight:300;color:var(--ink-60);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.int-badge-live{font-family:'Jost',sans-serif;font-size:8px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#168355;background:#D8FFE0;padding:2px 7px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.int-badge-soon{font-family:'Jost',sans-serif;font-size:8px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-40);background:rgba(0,0,0,.04);padding:2px 7px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.int-footnote{text-align:center;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;color:var(--ink-60);margin-top:36px;line-height:1.8;}
 
 </style>
 </head>
