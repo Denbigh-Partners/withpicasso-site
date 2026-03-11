@@ -3,459 +3,578 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Denbigh Group — We Build Fortresses</title>
-<meta name="description" content="A privately held group of interconnected companies creating enduring value through financial intelligence, capital management, real estate, and venture investment.">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<title>Picasso ai · Finally. You drive.</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23168355'/><text x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia,serif' font-size='20' font-weight='400' fill='%23F5F2EE'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --forest:     #054F30;
-  --green:      #168355;
-  --cream:      #F5F2EE;
-  --beige:      #E0DCD5;
-  --sage:       #959A83;
-  --ink:        #1A1A18;
-  --gold:       #C9A96E;
-  --muted:      rgba(245,242,238,0.45);
-  --ease:       cubic-bezier(0.16,1,0.3,1);
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --cream:#F5F2EE;
+  --beige:#E0DCD5;
+  --sage:#959A83;
+  --ink:#1A1A18;
+  --ink-60:rgba(26,26,24,.6);
+  --ink-35:rgba(26,26,24,.35);
+  --ink-12:rgba(26,26,24,.12);
+  --ink-06:rgba(26,26,24,.06);
+  --green:#168355;
+  --green-dark:#054F30;
+  --green-light:#D8FFE0;
+  --green-mid:rgba(22,131,85,.08);
+  --gold:#C9A96E;
+  --amber:#D4842A;
+  --red-soft:#C75050;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+  --ease-out:cubic-bezier(0,0,.3,1);
 }
-html { scroll-behavior: smooth; }
-body { background: var(--forest); color: var(--cream); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;overflow-x:hidden}
 
-/* ── NAV ── */
-nav {
-  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 32px 64px;
-  transition: padding 0.4s var(--ease), background 0.4s, border-color 0.4s;
-  border-bottom: 1px solid transparent;
-}
-nav.scrolled {
-  padding: 18px 64px;
-  background: rgba(5,79,48,0.97);
-  backdrop-filter: blur(16px);
-  border-bottom-color: rgba(255,255,255,0.08);
-}
-.nav-brand {
-  text-decoration: none;
-  display: flex; flex-direction: column; gap: 2px;
-}
-.nav-brand-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 17px; font-weight: 400; letter-spacing: 0.14em;
-  text-transform: uppercase; color: var(--cream); line-height: 1;
-}
-.nav-brand-sub {
-  font-size: 9px; letter-spacing: 0.24em; text-transform: uppercase;
-  color: var(--gold); font-weight: 300;
-}
-.nav-links { display: flex; gap: 4px; }
-.nav-links a {
-  font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase;
-  font-weight: 300; text-decoration: none; color: rgba(245,242,238,0.55);
-  padding: 9px 16px; border-radius: 100px;
-  transition: color 0.2s, background 0.2s;
-}
-.nav-links a:hover { color: var(--cream); background: rgba(255,255,255,0.08); }
-.nav-links a.active { color: var(--cream); background: rgba(255,255,255,0.1); }
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:32px 64px;transition:padding .5s var(--ease),background .5s,border-color .5s;border-bottom:1px solid transparent;}
+nav.scrolled{padding:18px 64px;background:rgba(245,242,238,.95);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom-color:var(--ink-12);}
+.nav-logo{display:flex;align-items:baseline;gap:3px;text-decoration:none}
+.nav-logo-word{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:400;color:var(--ink);letter-spacing:.02em}
+.nav-logo-ai{font-family:'Jost',sans-serif;font-size:11px;font-weight:300;color:var(--green);letter-spacing:.06em;margin-left:1px;align-self:center}
+.nav-right{display:flex;align-items:center;gap:6px}
+.nav-link{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:300;color:var(--ink-60);text-decoration:none;padding:8px 16px;border-radius:100px;transition:color .2s,background .2s}
+.nav-link:hover{color:var(--ink);background:var(--ink-06)}
+.nav-signup{background:var(--ink);color:var(--cream)!important;font-weight:400!important;transition:background .2s,transform .15s!important}
+.nav-signup:hover{background:var(--green-dark)!important;transform:translateY(-1px)}
 
-/* ── HERO ── */
-.hero {
-  position: relative; min-height: 100vh;
-  display: flex; align-items: flex-end;
-  padding: 0 64px 96px; overflow: hidden;
-}
-.hero-bg {
-  position: absolute; inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 65% 35%, rgba(22,131,85,0.22) 0%, transparent 55%),
-    radial-gradient(ellipse 50% 80% at 15% 85%, rgba(3,40,22,0.8) 0%, transparent 60%),
-    linear-gradient(160deg, #054F30 0%, #032818 100%);
-}
-.hero-grain {
-  position: absolute; inset: 0; pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  background-size: 220px; opacity: 0.04;
-}
-.hero-lines { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
-.hero-line {
-  position: absolute; top: 0; width: 1px; height: 100%;
-  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.055), transparent);
-  animation: lf 5s ease-in-out infinite;
-}
-.hero-line:nth-child(1){left:16.6%;animation-delay:0s}
-.hero-line:nth-child(2){left:33.3%;animation-delay:1s}
-.hero-line:nth-child(3){left:50%;animation-delay:2s}
-.hero-line:nth-child(4){left:66.6%;animation-delay:3s}
-.hero-line:nth-child(5){left:83.3%;animation-delay:4s}
-@keyframes lf{0%,100%{opacity:0}50%{opacity:1}}
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:140px 64px 100px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");background-size:180px;opacity:.025;}
+.hero-left{display:contents}
+.hero-label{display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);font-weight:400;margin-bottom:48px;opacity:0;animation:rise .8s .1s var(--ease) forwards;}
+.hero-label-dot{width:5px;height:5px;background:var(--green);border-radius:50%;animation:blink 2.4s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.hero-headline{font-family:'Cormorant Garamond',serif;font-size:clamp(72px,10vw,140px);font-weight:300;line-height:.88;letter-spacing:-.03em;color:var(--ink);margin-bottom:0;opacity:0;animation:rise .9s .2s var(--ease) forwards;}
+.hero-headline em{font-style:italic;color:var(--green)}
+.hero-headline-line2{font-family:'Cormorant Garamond',serif;font-size:clamp(72px,10vw,140px);font-weight:300;line-height:.88;letter-spacing:-.03em;color:var(--ink-35);font-style:italic;margin-bottom:56px;opacity:0;animation:rise .9s .32s var(--ease) forwards;}
+.hero-body{font-size:clamp(16px,1.8vw,20px);line-height:1.75;color:var(--ink-60);font-weight:300;max-width:560px;margin:0 auto 56px;opacity:0;animation:rise .8s .44s var(--ease) forwards;}
+.hero-cta-wrap{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap;opacity:0;animation:rise .8s .54s var(--ease) forwards;}
+.hero-scroll{position:absolute;bottom:60px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0;animation:rise .6s .9s var(--ease) forwards;}
+.hero-scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,var(--ink-35),transparent);animation:scrollpulse 2s ease-in-out infinite}
+@keyframes scrollpulse{0%,100%{opacity:.4}50%{opacity:.8}}
+.hero-scroll-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-35);font-weight:300}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
 
-.hero-content {
-  position: relative; z-index: 2; max-width: 1000px;
-  animation: hi 1.4s var(--ease) both;
-}
-@keyframes hi{from{opacity:0;transform:translateY(48px)}to{opacity:1;transform:translateY(0)}}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--cream);font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:400;padding:18px 36px;border-radius:100px;text-decoration:none;transition:background .25s var(--ease),transform .2s var(--ease),box-shadow .25s;border:none;cursor:pointer;}
+.btn-primary:hover{background:var(--green-dark);transform:translateY(-2px);box-shadow:0 16px 48px rgba(5,79,48,.2)}
+.btn-primary svg{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.5;transition:transform .2s}
+.btn-primary:hover svg{transform:translateX(3px)}
+.btn-ghost{font-size:13px;color:var(--ink-60);text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .2s;letter-spacing:.02em;}
+.btn-ghost:hover{color:var(--ink)}
 
-.hero-eyebrow {
-  display: flex; align-items: center; gap: 16px; margin-bottom: 28px;
-  font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold);
-}
-.hero-eyebrow::before { content:''; width:48px; height:1px; background:var(--gold); }
+/* PROBLEM */
+.problem{padding:120px 64px;display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--cream);border-top:1px solid var(--ink-12);}
+.section-label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);font-weight:400;margin-bottom:48px;}
+.problem-lines{display:flex;flex-direction:column;gap:0;max-width:900px}
+.problem-line{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4.5vw,60px);font-weight:300;line-height:1.12;letter-spacing:-.02em;color:var(--ink-35);padding:20px 0;border-bottom:1px solid var(--ink-12);text-align:left;transition:color .4s;cursor:default;}
+.problem-line:last-child{border-bottom:none}
+.problem-line:hover{color:var(--ink)}
+.problem-line em{font-style:italic}
+.problem-line strong{font-style:normal;color:var(--ink);font-weight:300}
+.problem-resolution{margin-top:64px;font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.5vw,48px);font-weight:300;line-height:1.15;letter-spacing:-.02em;color:var(--ink);}
+.problem-resolution em{font-style:italic;color:var(--green)}
 
-.hero-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(68px,10vw,132px);
-  font-weight: 300; line-height: 0.88; letter-spacing: -0.02em;
-  color: var(--cream); margin-bottom: 44px;
-}
-.hero-title em { font-style: italic; color: rgba(245,242,238,0.38); display: block; }
+/* PRODUCT REVEAL */
+.reveal{padding:80px 64px 120px;display:flex;flex-direction:column;align-items:center;background:white;border-top:1px solid var(--ink-12);}
+.reveal-label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);font-weight:400;margin-bottom:20px}
+.reveal-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,56px);font-weight:300;line-height:1.08;letter-spacing:-.02em;color:var(--ink);text-align:center;margin-bottom:12px;}
+.reveal-title em{font-style:italic;color:var(--green)}
+.reveal-sub{font-size:15px;color:var(--ink-60);max-width:480px;text-align:center;line-height:1.7;margin-bottom:72px}
+.app-wrap{width:100%;max-width:860px;position:relative;padding-bottom:160px;overflow:visible;}
+.app-window{background:white;border-radius:20px;overflow:hidden;border:1px solid var(--ink-12);box-shadow:0 40px 80px rgba(26,26,24,.1),0 8px 20px rgba(26,26,24,.06);}
+.iphone{position:absolute;bottom:160px;right:50px;width:210px;z-index:10;filter:drop-shadow(0 28px 48px rgba(26,26,24,.2)) drop-shadow(0 6px 16px rgba(26,26,24,.1));}
+.iphone-frame{background:linear-gradient(180deg,#2c2c2a 0%,#1a1a18 40%,#242422 100%);border-radius:44px;padding:8px;position:relative;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14),inset 0 1px 0 rgba(255,255,255,.2),0 0 0 1px rgba(0,0,0,.6);}
+.iphone-frame::before{content:'';position:absolute;left:-3px;top:80px;width:3px;height:28px;background:#1a1a18;border-radius:2px 0 0 2px;box-shadow:0 42px 0 #1a1a18;}
+.iphone-frame::after{content:'';position:absolute;right:-3px;top:100px;width:3px;height:48px;background:#1a1a18;border-radius:0 2px 2px 0;}
+.iphone-screen{background:var(--cream);border-radius:38px;overflow:hidden;position:relative;}
+.dynamic-island{width:82px;height:24px;background:#1a1a18;border-radius:18px;margin:10px auto 0;position:relative;z-index:2;}
+.iph-body{padding:10px 14px 16px}
+.iph-greeting{font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:2px;font-weight:400}
+.iph-title{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:var(--ink);line-height:1;margin-bottom:2px}
+.iph-date{font-size:7px;color:var(--ink-35);margin-bottom:10px;font-weight:300}
+.iph-health{background:linear-gradient(135deg,rgba(22,131,85,.09),rgba(22,131,85,.03));border:1px solid rgba(22,131,85,.2);border-radius:12px;padding:9px 12px;display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
+.iph-score{font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:300;color:var(--green-dark);line-height:1}
+.iph-trend{font-size:7px;color:var(--sage);margin-top:2px}
+.iph-badge{background:var(--green);color:white;font-size:7px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:100px;font-weight:400}
+.iph-insight{background:white;border:1px solid var(--beige);border-radius:10px;padding:9px 11px;margin-bottom:8px}
+.iph-chip{background:var(--ink);color:var(--cream);font-size:6px;letter-spacing:.14em;text-transform:uppercase;padding:2px 8px;border-radius:100px;display:inline-block;margin-bottom:6px;font-weight:400}
+.iph-text{font-family:'Cormorant Garamond',serif;font-size:10px;font-style:italic;color:var(--ink);line-height:1.55}
+.iph-text strong{font-style:normal;color:var(--green-dark)}
+.iph-metrics{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:8px}
+.iph-m{background:white;border:1px solid var(--beige);border-radius:10px;padding:8px 10px}
+.iph-m-label{font-size:6px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:3px}
+.iph-m-val{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:300;color:var(--ink);line-height:1;margin-bottom:2px}
+.iph-m-delta{font-size:7px}
+.iph-ask{background:var(--green);border-radius:10px;padding:8px 11px;display:flex;align-items:center;justify-content:space-between}
+.iph-ask-text{font-size:7px;color:rgba(255,255,255,.45);font-weight:300}
+.iph-ask-btn{font-size:7px;color:white;letter-spacing:.1em;text-transform:uppercase;font-weight:400}
+.app-bar{background:#f7f6f4;padding:14px 20px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--ink-12);}
+.w-dot{width:10px;height:10px;border-radius:50%}
+.w-dot:nth-child(1){background:#ff6058}
+.w-dot:nth-child(2){background:#ffbd2e}
+.w-dot:nth-child(3){background:#29c840}
+.app-url{margin:0 auto;background:var(--beige);border-radius:6px;padding:4px 20px;font-size:11px;color:var(--ink-60);letter-spacing:.04em;}
+.app-body{padding:28px 28px 24px}
+.mb-top{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px}
+.mb-greeting{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);margin-bottom:6px;font-weight:400}
+.mb-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--ink);line-height:1;margin-bottom:4px}
+.mb-date{font-size:12px;color:var(--ink-35);font-weight:300}
+.mb-logo{width:40px;height:40px;background:var(--green);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.mb-logo svg{width:20px;height:20px;fill:white}
+.health{display:flex;align-items:center;justify-content:space-between;background:linear-gradient(135deg,rgba(22,131,85,.07),rgba(22,131,85,.03));border:1px solid rgba(22,131,85,.18);border-radius:14px;padding:18px 22px;margin-bottom:18px;}
+.h-score-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:400;margin-bottom:5px}
+.h-score-num{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:300;color:var(--green-dark);line-height:1}
+.h-score-trend{font-size:11px;color:var(--sage);margin-top:3px;font-weight:300}
+.h-right{text-align:right}
+.h-badge{display:inline-block;background:var(--green);color:white;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:4px 14px;border-radius:100px;font-weight:400;margin-bottom:7px}
+.h-rank{font-size:11px;color:var(--sage);font-weight:300}
+.p-insight{background:var(--cream);border:1px solid var(--beige);border-radius:12px;padding:18px 20px;margin-bottom:18px;}
+.p-chip{display:inline-block;background:var(--ink);color:var(--cream);font-size:9px;letter-spacing:.16em;text-transform:uppercase;padding:3px 11px;border-radius:100px;font-weight:400;margin-bottom:11px}
+.p-text{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:400;color:var(--ink);line-height:1.6;font-style:italic}
+.p-text strong{font-style:normal;color:var(--green-dark);font-weight:400}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.m-card{background:white;border:1px solid var(--beige);border-radius:12px;padding:16px 18px;transition:border-color .2s}
+.m-card:hover{border-color:rgba(22,131,85,.3)}
+.m-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:7px;font-weight:400}
+.m-val{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--ink);line-height:1;margin-bottom:3px}
+.m-delta{font-size:11px;font-weight:300}
+.up{color:var(--green)}.down{color:var(--red-soft)}.flat{color:var(--sage)}
+.actions{display:flex;flex-direction:column;gap:10px;margin-bottom:18px}
+.action{display:flex;align-items:flex-start;gap:14px;padding:14px 18px;border-radius:12px;border:1px solid}
+.action.warn{background:rgba(212,132,42,.05);border-color:rgba(212,132,42,.2)}
+.action.good{background:var(--green-mid);border-color:rgba(22,131,85,.18)}
+.action-icon{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.action.warn .action-icon{background:rgba(212,132,42,.12)}
+.action.warn .action-icon svg{fill:var(--amber)}
+.action.good .action-icon{background:rgba(22,131,85,.1)}
+.action.good .action-icon svg{fill:var(--green)}
+.action-icon svg{width:14px;height:14px}
+.action-title{font-size:13px;font-weight:400;color:var(--ink);letter-spacing:.01em;margin-bottom:3px}
+.action-desc{font-size:11px;color:var(--ink-60);line-height:1.55;font-weight:300}
+.ask{display:flex;align-items:center;gap:12px;background:var(--green);border-radius:12px;padding:14px 18px;cursor:pointer;transition:background .2s;}
+.ask:hover{background:var(--green-dark)}
+.ask-placeholder{flex:1;font-size:12px;color:rgba(255,255,255,.5);font-weight:300}
+.ask-send{font-size:11px;color:white;letter-spacing:.1em;text-transform:uppercase;font-weight:400;white-space:nowrap}
 
-.hero-sub {
-  font-size: 15px; line-height: 1.8;
-  color: rgba(245,242,238,0.55); max-width: 480px;
-}
+/* HOW IT WORKS */
+.how{padding:120px 64px;background:var(--cream);border-top:1px solid var(--ink-12);}
+.how-inner{max-width:1100px;margin:0 auto}
+.how-header{text-align:center;margin-bottom:80px}
+.how-title{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,56px);font-weight:300;line-height:1.08;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px;}
+.how-title em{font-style:italic;color:var(--green)}
+.how-sub{font-size:15px;color:var(--ink-60);line-height:1.7;max-width:440px;margin:0 auto}
+.how-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--ink-12);border-radius:20px;overflow:hidden}
+.step{background:var(--cream);padding:48px 40px;position:relative}
+.step-num{font-family:'Cormorant Garamond',serif;font-size:64px;font-weight:300;color:var(--ink-12);line-height:1;margin-bottom:24px;letter-spacing:-.02em}
+.step-title{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:300;color:var(--ink);margin-bottom:12px;line-height:1.1}
+.step-body{font-size:14px;color:var(--ink-60);line-height:1.75;font-weight:300}
+.step-detail{margin-top:24px;padding-top:24px;border-top:1px solid var(--ink-12)}
+.step-detail-item{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--ink-60);margin-bottom:8px;font-weight:300}
+.step-detail-item::before{content:'';width:4px;height:4px;background:var(--green);border-radius:50%;flex-shrink:0}
 
-.hero-scroll {
-  position: absolute; right: 64px; bottom: 64px; z-index: 2;
-  display: flex; flex-direction: column; align-items: center; gap: 12px;
-  font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase;
-  color: rgba(245,242,238,0.22);
-}
-.hero-scroll-bar {
-  width: 1px; height: 72px;
-  background: linear-gradient(to bottom, rgba(245,242,238,0.28), transparent);
-  animation: sb 2.4s ease-in-out infinite;
-}
-@keyframes sb{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+/* PHILOSOPHY */
+.philosophy{padding:120px 64px;background:var(--green-dark);border-top:1px solid rgba(255,255,255,.06);}
+.phil-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center}
+.phil-label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:rgba(245,242,238,.35);font-weight:400;margin-bottom:32px}
+.phil-quote{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,3.5vw,50px);font-weight:300;line-height:1.12;letter-spacing:-.02em;color:var(--cream);margin-bottom:160px;}
+.phil-quote em{font-style:italic;color:rgba(216,255,224,.7)}
+.phil-attr{font-size:12px;color:rgba(245,242,238,.3);letter-spacing:.1em;text-transform:uppercase;font-weight:300}
+.phil-right{display:flex;flex-direction:column;gap:0}
+.phil-item{padding:28px 0;border-bottom:1px solid rgba(255,255,255,.07);cursor:default}
+.phil-item:last-child{border-bottom:none}
+.phil-item-num{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(216,255,224,.4);font-weight:400;margin-bottom:8px}
+.phil-item-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--cream);margin-bottom:6px;line-height:1.1}
+.phil-item-body{font-size:13px;color:rgba(245,242,238,.45);line-height:1.7;font-weight:300}
 
-/* ── ABOUT ── */
-.about {
-  background: var(--cream); color: var(--ink);
-  padding: 128px 64px;
-}
-.about-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 120px; align-items: start; max-width: 1280px; }
+/* CLOSING CTA */
+.closing{padding:140px 64px;background:var(--cream);border-top:1px solid var(--ink-12);text-align:center;display:flex;flex-direction:column;align-items:center;}
+.closing-eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);font-weight:400;margin-bottom:32px}
+.closing-title{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,7vw,100px);font-weight:300;line-height:.9;letter-spacing:-.03em;color:var(--ink);margin-bottom:48px;}
+.closing-title em{font-style:italic;color:var(--green)}
+.closing-sub{font-size:15px;color:var(--ink-60);max-width:400px;line-height:1.7;margin-bottom:52px}
 
-.section-eyebrow {
-  display: flex; align-items: center; gap: 14px; margin-bottom: 28px;
-  font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--sage);
-}
-.section-eyebrow::before { content:''; width:32px; height:1px; background:var(--beige); flex-shrink:0; }
-.section-eyebrow.gold { color:var(--gold); }
-.section-eyebrow.gold::before { background:rgba(201,169,110,0.35); }
-.section-eyebrow.light { color:rgba(245,242,238,0.38); }
-.section-eyebrow.light::before { background:rgba(245,242,238,0.15); }
+/* FOOTER */
+footer{background:var(--ink);padding:48px 64px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+.foot-brand{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:300;color:var(--cream);letter-spacing:.04em}
+.foot-brand span{color:var(--green);font-style:italic}
+.foot-by{font-size:11px;color:rgba(245,242,238,.25);margin-top:4px;letter-spacing:.06em}
+.foot-links{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+.foot-links a{font-size:11px;color:rgba(245,242,238,.3);text-decoration:none;letter-spacing:.08em;transition:color .2s}
+.foot-links a:hover{color:var(--cream)}
+.foot-copy{font-size:11px;color:rgba(245,242,238,.2);letter-spacing:.04em}
 
-.display-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(36px, 4vw, 54px); font-weight: 300;
-  line-height: 1.08; letter-spacing: -0.02em; color: var(--ink);
-}
-.display-title em { font-style: italic; color: rgba(26,26,24,0.38); }
-.display-title.light { color: var(--cream); }
-.display-title.light em { color: rgba(245,242,238,0.38); }
+/* SCROLL REVEAL */
+.sr{opacity:0;transform:translateY(32px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.sr.visible{opacity:1;transform:none}
+.sr-delay-1{transition-delay:.1s}
+.sr-delay-2{transition-delay:.2s}
+.sr-delay-3{transition-delay:.3s}
 
-.body-text { font-size: 15px; line-height: 1.82; font-weight: 300; }
-.body-text p+p { margin-top: 18px; }
-.body-text.ink { color: rgba(26,26,24,0.65); }
-.body-text.light { color: rgba(245,242,238,0.52); }
+/* MOBILE NAV */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;border:none;background:none}
+.ham span{display:block;width:22px;height:1.5px;background:var(--ink);transition:all .3s var(--ease);transform-origin:center}
+.ham.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+.nav-mob{display:none;position:fixed;inset:0;background:var(--cream);z-index:190;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.nav-mob.open{display:flex}
+.nav-mob a{font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:300;color:var(--ink);text-decoration:none;padding:10px 32px;transition:color .2s;letter-spacing:-.01em}
+.nav-mob a:hover{color:var(--green)}
 
-.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 48px; }
-.stat-card { background: white; border: 1px solid var(--beige); padding: 36px 32px; }
-.stat-num {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 52px; font-weight: 300; color: var(--forest); line-height: 1; margin-bottom: 8px;
+/* RESPONSIVE */
+@media(max-width:1024px){
+  nav,nav.scrolled{padding:20px 32px}
+  .nav-right .nav-link:not(.nav-signup){display:none}
+  .ham{display:flex}
+  .hero{padding:120px 32px 80px}
+  .problem,.closing{padding:80px 32px}
+  .reveal{padding:60px 32px 100px}
+  .how{padding:80px 32px}
+  .how-steps{grid-template-columns:1fr}
+  .philosophy{padding:80px 32px}
+  .phil-inner{grid-template-columns:1fr;gap:56px}
+  footer{padding:40px 32px}
 }
-.stat-label { font-size: 11px; color: var(--sage); letter-spacing: 0.1em; text-transform: uppercase; line-height: 1.5; }
-
-/* ── COMPANIES ── */
-.companies { background: var(--ink); padding: 128px 64px; }
-.companies-header { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-bottom: 72px; max-width: 1280px; }
-.eco-note {
-  margin-top: 28px; padding: 24px 28px;
-  background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 12px;
+@media(max-width:640px){
+  .hero{padding:100px 24px 60px}
+  .hero-headline,.hero-headline-line2{font-size:clamp(56px,14vw,80px)}
+  .metrics{grid-template-columns:1fr 1fr}
+  .metrics .m-card:last-child{display:none}
+  .how-steps{border-radius:16px}
+  .step{padding:36px 28px}
+  footer{flex-direction:column;align-items:flex-start}
+  .app-wrap{padding-bottom:80px}
+  .iphone{width:180px;right:10px;bottom:-50px}
 }
-.eco-note-label { font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
-.eco-note-text { font-size: 13px; line-height: 1.7; color: rgba(245,242,238,0.38); }
-
-.subs { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; max-width: 1280px; }
-.sub {
-  background: rgba(255,255,255,0.025);
-  border: 1px solid rgba(255,255,255,0.06);
-  padding: 52px 40px; position: relative; overflow: hidden;
-  text-decoration: none; display: block;
-  transition: background 0.4s, border-color 0.4s, transform 0.35s var(--ease);
-}
-.sub::after {
-  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
-  background: var(--green); transform: scaleX(0); transform-origin: left;
-  transition: transform 0.45s var(--ease);
-}
-.sub:hover { background: rgba(255,255,255,0.055); border-color: rgba(22,131,85,0.3); transform: translateY(-5px); }
-.sub:hover::after { transform: scaleX(1); }
-.sub-num { font-family: 'Cormorant Garamond', serif; font-size: 12px; color: var(--gold); letter-spacing: 0.1em; margin-bottom: 40px; display: block; }
-.sub-name { font-family: 'Cormorant Garamond', serif; font-size: 30px; font-weight: 300; color: var(--cream); margin-bottom: 20px; line-height: 1.05; }
-.sub-desc { font-size: 13px; line-height: 1.75; color: rgba(245,242,238,0.38); margin-bottom: 36px; }
-.sub-eco { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.06); }
-.sub-eco-label { font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(201,169,110,0.6); margin-bottom: 8px; }
-.sub-eco-text { font-size: 12px; line-height: 1.65; color: rgba(245,242,238,0.28); }
-.sub-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 28px; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--green); transition: gap 0.2s; }
-.sub:hover .sub-link { gap: 12px; }
-
-/* ── PHILOSOPHY ── */
-.philosophy {
-  background: var(--forest); padding: 160px 64px;
-  position: relative; overflow: hidden; text-align: center;
-}
-.philosophy-glow {
-  position: absolute; width: 900px; height: 900px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(22,131,85,0.18), transparent 65%);
-  top: 50%; left: 50%; transform: translate(-50%,-50%); pointer-events: none;
-}
-.philosophy-grain {
-  position: absolute; inset: 0; pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
-  background-size: 220px; opacity: 0.03;
-}
-.philosophy-inner { position: relative; z-index: 1; max-width: 820px; margin: 0 auto; }
-.philosophy-mark {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 220px; line-height: 1; color: rgba(245,242,238,0.04);
-  margin-bottom: -70px; letter-spacing: -0.05em; display: block;
-}
-.philosophy-quote {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(28px,3.8vw,48px); font-weight: 300; font-style: italic;
-  color: var(--cream); line-height: 1.38; margin-bottom: 52px;
-}
-.philosophy-rule {
-  display: inline-flex; align-items: center; gap: 18px;
-  font-size: 10px; letter-spacing: 0.26em; text-transform: uppercase; color: var(--gold);
-}
-.philosophy-rule::before,.philosophy-rule::after { content:''; width:44px; height:1px; background:rgba(201,169,110,0.38); }
-
-/* ── FOOTER ── */
-footer {
-  background: #0F0F0D; padding: 72px 64px 48px;
-  border-top: 1px solid rgba(255,255,255,0.05);
-}
-.footer-top { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
-.footer-brand-name { font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 300; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cream); margin-bottom: 12px; }
-.footer-brand-sub { font-size: 12px; color: var(--sage); line-height: 1.65; max-width: 200px; }
-.footer-col-title { font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; font-weight: 300; }
-.footer-col a { display: block; font-size: 13px; color: rgba(245,242,238,0.4); text-decoration: none; margin-bottom: 11px; transition: color 0.2s; }
-.footer-col a:hover { color: var(--cream); }
-.footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 11px; color: rgba(149,154,131,0.38); }
-.footer-bottom a { color: rgba(149,154,131,0.45); text-decoration: none; transition: color 0.2s; }
-.footer-bottom a:hover { color: var(--sage); }
-.footer-bottom-links { display: flex; gap: 24px; }
-
-/* ── ANIMATIONS ── */
-.fade-up { opacity:0; transform:translateY(28px); transition:opacity 0.75s var(--ease), transform 0.75s var(--ease); }
-.fade-up.v { opacity:1; transform:translateY(0); }
-.fade-up:nth-child(2){transition-delay:0.08s}
-.fade-up:nth-child(3){transition-delay:0.16s}
-.fade-up:nth-child(4){transition-delay:0.24s}
-.fade-up:nth-child(5){transition-delay:0.32s}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1024px){ .subs{grid-template-columns:1fr 1fr} }
-@media(max-width:900px){
-  nav{padding:20px 24px}
-  nav.scrolled{padding:14px 24px}
-  .nav-links{display:none}
-  .hero{padding:0 24px 72px}
-  .hero-scroll{display:none}
-  .about,.companies,.philosophy{padding:80px 24px}
-  .about-inner,.companies-header{grid-template-columns:1fr;gap:56px}
-  .subs{grid-template-columns:1fr}
-  footer{padding:56px 24px 40px}
-  .footer-top{grid-template-columns:1fr 1fr;gap:36px}
-  .footer-bottom{flex-direction:column;gap:16px;text-align:center}
+@media(max-width:400px){
+  .iphone{display:none}
 }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav id="nav">
-  <a href="index.html" class="nav-brand">
-    <span class="nav-brand-name">Denbigh Group</span>
-    <span class="nav-brand-sub">Est. Charleston, SC</span>
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-word">Picasso</span>
+    <span class="nav-logo-ai">ai</span>
   </a>
-  <div class="nav-links">
-    <a href="partners/index.html">Partners</a>
-    <a href="capital/index.html">Capital</a>
-    <a href="properties/index.html">Properties</a>
-    <a href="ventures/index.html">Ventures</a>
+  <div class="nav-right">
+    <a href="#how" class="nav-link">How it works</a>
+    <a href="#philosophy" class="nav-link">Philosophy</a>
+    <a href="https://www.denbighpartners.com" class="nav-link" target="_blank">About</a>
+    <a href="https://getpicasso.ai" class="nav-link nav-signup" target="_blank">Sign up</a>
   </div>
+  <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<nav class="nav-mob" id="navMob">
+  <a href="#how">How it works</a>
+  <a href="#philosophy">Philosophy</a>
+  <a href="https://www.denbighpartners.com" target="_blank">About</a>
+  <a href="https://getpicasso.ai" target="_blank">Sign up</a>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grain"></div>
-  <div class="hero-lines">
-    <div class="hero-line"></div><div class="hero-line"></div>
-    <div class="hero-line"></div><div class="hero-line"></div>
-    <div class="hero-line"></div>
-  </div>
-  <div class="hero-content">
-    <div class="hero-eyebrow">Charleston, South Carolina</div>
-    <h1 class="hero-title">We Build<br><em>Fortresses.</em></h1>
-    <p class="hero-sub">A privately held group of interconnected companies creating enduring value through financial intelligence, capital management, real estate, and venture investment.</p>
-  </div>
-  <div class="hero-scroll"><div class="hero-scroll-bar"></div><span>Scroll</span></div>
-</section>
-
-<!-- ABOUT -->
-<section class="about">
-  <div class="about-inner">
-    <div class="fade-up">
-      <div class="section-eyebrow">About the Group</div>
-      <h2 class="display-title">One ecosystem.<br><em>Compounding returns.</em></h2>
-      <div class="body-text ink" style="margin-top:28px">
-        <p>Denbigh is an old Welsh word meaning "little fortress." It's not just a name — it's a philosophy. We build structures that protect, grow, and endure for every client, partner, and venture we touch.</p>
-        <p>Our subsidiaries are self-reliant yet deeply interconnected. The intelligence generated by one becomes the competitive advantage of another. Capital flows where opportunity lives. Data reveals what instinct misses.</p>
-        <p>This is not a holding company. It is an ecosystem engineered for compounding value.</p>
-      </div>
+  <div class="hero-left">
+    <div class="hero-label">
+      <span class="hero-label-dot"></span>
+      AI CFO for business owners
     </div>
-    <div class="fade-up">
-      <div class="stats-grid">
-        <div class="stat-card">
-          <div class="stat-num">224.73%</div>
-          <div class="stat-label">Cumulative return since inception — Capital</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">13.75%</div>
-          <div class="stat-label">Annualized return — managed portfolio</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">4</div>
-          <div class="stat-label">Interconnected subsidiaries</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num">∞</div>
-          <div class="stat-label">Ecosystem synergies across the Group</div>
-        </div>
-      </div>
+    <h1 class="hero-headline">Finally.</h1>
+    <p class="hero-headline-line2">You drive.</p>
+    <p class="hero-body">Every morning, wake up knowing exactly how much cash you have, whether payroll clears Friday, and the one thing that needs your attention today. No spreadsheets. No guessing. Just clarity.</p>
+    <div class="hero-cta-wrap">
+      <a href="https://getpicasso.ai" class="btn-primary" target="_blank">
+        Sign up free
+        <svg viewBox="0 0 14 14"><path d="M2 7h10M7 2l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#how" class="btn-ghost">See how it works →</a>
     </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span class="hero-scroll-label">Scroll</span>
   </div>
 </section>
 
-<!-- COMPANIES -->
-<section class="companies">
-  <div class="companies-header">
-    <div class="fade-up">
-      <div class="section-eyebrow gold">Our Companies</div>
-      <h2 class="display-title light">Four companies.<br><em>One compounding<br>advantage.</em></h2>
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="section-label">Sound familiar?</div>
+  <div class="problem-lines">
+    <div class="problem-line sr">You didn't open this business to <strong>become an accountant.</strong></div>
+    <div class="problem-line sr sr-delay-1">But somewhere along the way, <em>the numbers became your second job.</em></div>
+    <div class="problem-line sr sr-delay-2">You're checking your bank balance at 11pm. <em>Wondering if that invoice cleared.</em></div>
+    <div class="problem-line sr sr-delay-3">Not because anyone told you <em>running a business means living inside your P&L.</em></div>
+  </div>
+  <p class="problem-resolution sr" style="transition-delay:.4s">
+    You deserve to know where you stand.<br><em>Every single morning.</em>
+  </p>
+</section>
+
+<!-- PRODUCT REVEAL -->
+<section class="reveal" id="product">
+  <div class="reveal-label sr">Meet Picasso</div>
+  <h2 class="reveal-title sr sr-delay-1">Your morning brief.<br><em>Every morning.</em></h2>
+  <p class="reveal-sub sr sr-delay-2">While you sleep, Picasso reads your Shopify, QuickBooks, and bank accounts. By the time your alarm goes off, it's already done the math — and written you a plain-English summary of what it means.</p>
+
+  <div class="app-wrap sr sr-delay-3">
+    <div class="app-window">
+      <div class="app-bar">
+        <div class="w-dot"></div><div class="w-dot"></div><div class="w-dot"></div>
+        <div class="app-url">getpicasso.ai · Morning Brief</div>
+      </div>
+      <div class="app-body">
+        <div class="mb-top">
+          <div>
+            <div class="mb-greeting">Good morning, Sarah</div>
+            <div class="mb-title">Morning Brief</div>
+            <div class="mb-date">Monday, March 10 · Coastal Home Goods</div>
+          </div>
+          <div class="mb-logo">
+            <svg viewBox="0 0 24 24"><path d="M12 3L4 8v13h16V8L12 3zm0 2.5L18 9v10H6V9l6-3.5zm-1 5v5h2v-5h-2z"/></svg>
+          </div>
+        </div>
+        <div class="health">
+          <div>
+            <div class="h-score-label">Business Health</div>
+            <div class="h-score-num">84</div>
+            <div class="h-score-trend">↑ 3 pts from last week</div>
+          </div>
+          <div class="h-right">
+            <div class="h-badge">Strong</div>
+            <div class="h-rank">Top 18% this month</div>
+          </div>
+        </div>
+        <div class="p-insight">
+          <div class="p-chip">Picasso's Insight</div>
+          <div class="p-text">Your weekend revenue was <strong>$4,840</strong>, your best Saturday in 6 weeks. The Linen Collection drove 38% of it. You have <strong>11 units left</strong> and they're moving fast. Reorder today or you'll be out by Thursday.</div>
+        </div>
+        <div class="metrics">
+          <div class="m-card">
+            <div class="m-label">Revenue · 7d</div>
+            <div class="m-val">$18.4k</div>
+            <div class="m-delta up">↑ 12% vs last week</div>
+          </div>
+          <div class="m-card">
+            <div class="m-label">Cash on hand</div>
+            <div class="m-val">$31.2k</div>
+            <div class="m-delta flat">47 days runway</div>
+          </div>
+          <div class="m-card">
+            <div class="m-label">Avg order</div>
+            <div class="m-val">$94</div>
+            <div class="m-delta up">↑ $7 vs prior</div>
+          </div>
+        </div>
+        <div class="actions">
+          <div class="action warn">
+            <div class="action-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 19h20L12 2zm0 3l7.5 13h-15L12 5zm-1 5v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+            </div>
+            <div>
+              <div class="action-title">Reorder: Linen Collection · 11 units remaining</div>
+              <div class="action-desc">At current velocity you sell out Thursday. Reorder takes 5 days. Act today.</div>
+            </div>
+          </div>
+          <div class="action good">
+            <div class="action-icon">
+              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="action-title">Payroll clears Friday. You're covered.</div>
+              <div class="action-desc">$6,200 due. Cash position comfortable. No action needed.</div>
+            </div>
+          </div>
+        </div>
+        <div class="ask">
+          <div class="ask-placeholder">Ask Picasso anything about your business...</div>
+          <div class="ask-send">Ask →</div>
+        </div>
+      </div>
     </div>
-    <div class="fade-up">
-      <p class="body-text light">Each subsidiary operates with complete independence while contributing to — and benefiting from — the intelligence generated across the entire Group.</p>
-      <div class="eco-note">
-        <div class="eco-note-label">The Ecosystem Loop</div>
-        <div class="eco-note-text">Partners identifies high-performing SMBs → Capital manages their excess cash → Properties helps them expand → Ventures invests in the best ones. Closed loop. Compounding advantage.</div>
+
+    <!-- iPhone overlay -->
+    <div class="iphone">
+      <div class="iphone-frame">
+        <div class="iphone-screen">
+          <div class="dynamic-island"></div>
+          <div class="iph-body">
+            <div class="iph-greeting">Good morning, Sarah</div>
+            <div class="iph-title">Morning Brief</div>
+            <div class="iph-date">Monday, March 10 · Coastal Home Goods</div>
+            <div class="iph-health">
+              <div>
+                <div style="font-size:6px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:2px;font-weight:400">Health</div>
+                <div class="iph-score">84</div>
+                <div class="iph-trend">↑ 3 pts</div>
+              </div>
+              <div class="iph-badge">Strong</div>
+            </div>
+            <div class="iph-insight">
+              <div class="iph-chip">Picasso's Insight</div>
+              <div class="iph-text">Linen Collection drove <strong>38%</strong> of weekend revenue. <strong>11 units left.</strong> Reorder today.</div>
+            </div>
+            <div class="iph-metrics">
+              <div class="iph-m">
+                <div class="iph-m-label">Revenue 7d</div>
+                <div class="iph-m-val">$18.4k</div>
+                <div class="iph-m-delta up">↑ 12%</div>
+              </div>
+              <div class="iph-m">
+                <div class="iph-m-label">Cash</div>
+                <div class="iph-m-val">$31.2k</div>
+                <div class="iph-m-delta flat">47 days</div>
+              </div>
+            </div>
+            <div class="iph-ask">
+              <div class="iph-ask-text">Ask Picasso...</div>
+              <div class="iph-ask-btn">Ask →</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="subs">
-    <a href="partners/index.html" class="sub fade-up">
-      <span class="sub-num">01</span>
-      <div class="sub-name">Denbigh<br>Partners</div>
-      <div class="sub-desc">AI-powered financial intelligence for SMBs. Goldman Sachs rigor. Warren Buffett clarity. Powered by Picasso.</div>
-      <div class="sub-eco">
-        <div class="sub-eco-label">Ecosystem Contribution</div>
-        <div class="sub-eco-text">CFO clients use Properties' platform to secure real estate for expansion — aligning financial insight with location growth.</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how" id="how">
+  <div class="how-inner">
+    <div class="how-header sr">
+      <div class="section-label" style="margin-bottom:20px">Three steps</div>
+      <h2 class="how-title">Up and running<br><em>in under five minutes.</em></h2>
+      <p class="how-sub">Connect your tools once. From that night forward, Picasso does the work. You just read the brief.</p>
+    </div>
+    <div class="how-steps">
+      <div class="step sr">
+        <div class="step-num">01</div>
+        <div class="step-title">Sign in & connect</div>
+        <div class="step-body">Connect your QuickBooks, Shopify, and bank in three clicks. Picasso auto-detects your industry, your locations, and your business type. You answer zero questions.</div>
+        <div class="step-detail">
+          <div class="step-detail-item">Shopify · QuickBooks · Plaid</div>
+          <div class="step-detail-item">Toast · Open Dental · Mindbody</div>
+          <div class="step-detail-item">Auto-detects everything</div>
+        </div>
       </div>
-      <div class="sub-link">View Partners →</div>
-    </a>
-    <a href="capital/index.html" class="sub fade-up">
-      <span class="sub-num">02</span>
-      <div class="sub-name">Denbigh<br>Capital</div>
-      <div class="sub-desc">Democratizing elite value investing. Proprietary 13f analysis delivering consistent benchmark outperformance.</div>
-      <div class="sub-eco">
-        <div class="sub-eco-label">Ecosystem Contribution</div>
-        <div class="sub-eco-text">SMB clients can seamlessly reinvest excess free cash through Capital's wealth management services.</div>
+      <div class="step sr sr-delay-1">
+        <div class="step-num">02</div>
+        <div class="step-title">The hard part happens overnight</div>
+        <div class="step-body">Every night, Picasso reads every transaction, checks your cash position, spots anything unusual, and figures out what actually matters. All of it done before your alarm goes off.</div>
+        <div class="step-detail">
+          <div class="step-detail-item">31 AI agents running in parallel</div>
+          <div class="step-detail-item">Every account. Every transaction.</div>
+          <div class="step-detail-item">Zero input required from you</div>
+        </div>
       </div>
-      <div class="sub-link">View Capital →</div>
-    </a>
-    <a href="properties/index.html" class="sub fade-up">
-      <span class="sub-num">03</span>
-      <div class="sub-name">Denbigh<br>Properties</div>
-      <div class="sub-desc">Strategic property development and acquisition. Discerning design. Data-driven discipline. Consistent returns.</div>
-      <div class="sub-eco">
-        <div class="sub-eco-label">Ecosystem Contribution</div>
-        <div class="sub-eco-text">Free cash flow from real estate is reinvested into high-growth ventures, maximizing capital efficiency across the Group.</div>
+      <div class="step sr sr-delay-2">
+        <div class="step-num">03</div>
+        <div class="step-title">Wake up and drive</div>
+        <div class="step-body">Your Morning Brief is ready when you wake up. Plain English. What happened, what it means, and the one or two things worth your attention today. Read it in two minutes. Run your day with confidence.</div>
+        <div class="step-detail">
+          <div class="step-detail-item">Plain English. Always.</div>
+          <div class="step-detail-item">Ranked by what matters most</div>
+          <div class="step-detail-item">Ask Picasso anything, anytime</div>
+        </div>
       </div>
-      <div class="sub-link">View Properties →</div>
-    </a>
-    <a href="ventures/index.html" class="sub fade-up">
-      <span class="sub-num">04</span>
-      <div class="sub-name">Denbigh<br>Ventures</div>
-      <div class="sub-desc">Long-term strategic bets in fintech, real estate tech, and automation. Turning operating expenses into revenue opportunities.</div>
-      <div class="sub-eco">
-        <div class="sub-eco-label">Ecosystem Contribution</div>
-        <div class="sub-eco-text">Picasso data identifies high-potential SMBs for strategic investment — transforming operational success into capital growth.</div>
-      </div>
-      <div class="sub-link">View Ventures →</div>
-    </a>
+    </div>
   </div>
 </section>
 
 <!-- PHILOSOPHY -->
-<section class="philosophy">
-  <div class="philosophy-glow"></div>
-  <div class="philosophy-grain"></div>
-  <div class="philosophy-inner fade-up">
-    <span class="philosophy-mark">"</span>
-    <p class="philosophy-quote">Denbigh means little fortress.<br>It's what we build for every client,<br>every partner, every investment we touch.</p>
-    <div class="philosophy-rule">The Denbigh Principle</div>
+<section class="philosophy" id="philosophy">
+  <div class="phil-inner">
+    <div class="phil-left sr">
+      <div class="phil-label">The Picasso principle</div>
+      <blockquote class="phil-quote">
+        Institutional-grade analysis.<br>
+        <em>Explained like you're talking to a friend.</em>
+      </blockquote>
+      <p class="phil-attr">How Picasso thinks</p>
+    </div>
+    <div class="phil-right">
+      <div class="phil-item sr">
+        <div class="phil-item-num">01</div>
+        <div class="phil-item-title">You drive. Picasso navigates.</div>
+        <div class="phil-item-body">Every decision stays yours. Picasso watches the road ahead and calls what's coming before you see it. Quietly, in plain English, without ever touching the wheel.</div>
+      </div>
+      <div class="phil-item sr sr-delay-1">
+        <div class="phil-item-num">02</div>
+        <div class="phil-item-title">31 agents. One clear sentence.</div>
+        <div class="phil-item-body">The complexity is real. It lives underneath. What reaches you is one clear sentence that contains everything you need to act.</div>
+      </div>
+      <div class="phil-item sr sr-delay-2">
+        <div class="phil-item-num">03</div>
+        <div class="phil-item-title">Written for your sister.</div>
+        <div class="phil-item-body">Intelligent. Capable. Running her own business. Not a finance expert. If she wouldn't understand it, Picasso doesn't say it.</div>
+      </div>
+      <div class="phil-item sr sr-delay-3">
+        <div class="phil-item-num">04</div>
+        <div class="phil-item-title">The math is always right.</div>
+        <div class="phil-item-body">Picasso earns the right to speak simply because it understands what's underneath. The rigor is always there. You just never have to look at it.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING CTA -->
+<section class="closing" id="signup">
+  <div class="closing-eyebrow sr">Ready?</div>
+  <h2 class="closing-title sr sr-delay-1">Finally.<br><em>You drive.</em></h2>
+  <p class="closing-sub sr sr-delay-2">Connect your tools in minutes. Tomorrow morning, your first brief is waiting — your cash position, what changed overnight, and exactly what needs your attention today.</p>
+  <div class="hero-cta-wrap sr sr-delay-3">
+    <a href="https://getpicasso.ai" class="btn-primary" target="_blank">
+      Sign up free
+      <svg viewBox="0 0 14 14"><path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <a href="https://www.denbighpartners.com" class="btn-ghost" target="_blank">Learn about Denbigh Partners →</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div>
-      <div class="footer-brand-name">Denbigh Group</div>
-      <div class="footer-brand-sub">Building fortresses for clients, partners, and ventures. Est. Charleston, SC.</div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Partners</div>
-      <a href="partners/index.html">Overview</a>
-      <a href="partners/index.html#strategy">Strategy</a>
-      <a href="https://withpicasso.com" target="_blank">Picasso ↗</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Capital</div>
-      <a href="capital/index.html">Overview</a>
-      <a href="capital/index.html#performance">Performance</a>
-      <a href="capital/login.html">Login ↗</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Properties</div>
-      <a href="properties/index.html">Overview</a>
-      <a href="properties/index.html#strategy">Strategy</a>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-title">Ventures</div>
-      <a href="ventures/index.html">Overview</a>
-      <a href="ventures/index.html#strategy">Strategy</a>
-    </div>
+  <div>
+    <div class="foot-brand">Picasso <span>ai</span></div>
+    <div class="foot-by">by Denbigh Partners · Charleston, SC</div>
   </div>
-  <div class="footer-bottom">
-    <span>© 2026 Denbigh Group. All rights reserved.</span>
-    <div class="footer-bottom-links">
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Contact</a>
-    </div>
+  <div class="foot-links">
+    <a href="https://www.denbighpartners.com/privacy" target="_blank">Privacy</a>
+    <a href="https://www.denbighpartners.com/terms" target="_blank">Terms</a>
+    <a href="https://www.denbighpartners.com/contact" target="_blank">Contact</a>
+    <a href="https://www.denbighpartners.com" target="_blank">Denbigh Partners</a>
   </div>
+  <div class="foot-copy">© 2026 Denbigh Partners LLC</div>
 </footer>
 
 <script>
-  const nav = document.getElementById('nav');
-  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60));
-  const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('v'); }), {threshold:0.08});
-  document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 60), {passive:true});
+
+const ham = document.getElementById('ham');
+const mob = document.getElementById('navMob');
+ham.addEventListener('click', () => {
+  ham.classList.toggle('open');
+  mob.classList.toggle('open');
+  document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+});
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  ham.classList.remove('open');
+  mob.classList.remove('open');
+  document.body.style.overflow = '';
+}));
+
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible') });
+}, { threshold: 0.1 });
+document.querySelectorAll('.sr').forEach(el => obs.observe(el));
 </script>
 </body>
 </html>
