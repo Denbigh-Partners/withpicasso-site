@@ -1,7 +1,20 @@
 {
   "rewrites": [
-    { "source": "/privacy", "destination": "/privacy.html" },
-    { "source": "/terms", "destination": "/terms.html" },
-    { "source": "/eula", "destination": "/eula.html" }
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html"
+    },
+    {
+      "source": "/eula",
+      "destination": "/eula.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    }
   ]
 }

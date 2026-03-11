@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · Picasso ai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#1A1A18;--ink-60:rgba(26,26,24,.6);--ink-20:rgba(26,26,24,.2);--green:#168355;--green-dark:#054F30;--cream:#F5F2EE;--beige:#E0DCD5;--sage:#959A83}
+body{background:var(--cream);color:var(--ink);font-family:'Jost',sans-serif;font-weight:300;line-height:1.7;min-height:100vh;display:flex;flex-direction:column}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:24px 40px;display:flex;align-items:center;justify-content:space-between;background:var(--cream);border-bottom:1px solid var(--ink-20)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:300;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.nav-logo em{font-style:italic;color:var(--green)}
+.nav-back{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-60);text-decoration:none;transition:color .2s}
+.nav-back:hover{color:var(--ink)}
+main{flex:1;max-width:960px;margin:0 auto;width:100%;padding:140px 40px 100px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.left .eyebrow{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--sage);margin-bottom:16px}
+.left h1{font-family:'Cormorant Garamond',serif;font-size:clamp(48px,6vw,72px);font-weight:300;line-height:1.0;letter-spacing:-.02em;margin-bottom:24px}
+.left h1 em{font-style:italic;color:var(--sage)}
+.left p{font-size:15px;color:var(--ink-60);line-height:1.8;max-width:320px}
+.right{padding-top:8px}
+.contact-item{padding:28px 0;border-bottom:1px solid var(--ink-20)}
+.contact-item:first-child{border-top:1px solid var(--ink-20)}
+.contact-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
+.contact-value{font-size:17px;color:var(--ink);font-weight:300}
+.contact-value a{color:var(--ink);text-decoration:none;transition:color .2s}
+.contact-value a:hover{color:var(--green)}
+.contact-sub{font-size:13px;color:var(--ink-60);margin-top:4px}
+.cta-block{margin-top:40px}
+.cta-btn{display:inline-block;background:var(--green-dark);color:#fff;font-family:'Jost',sans-serif;font-size:13px;font-weight:400;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:16px 32px;transition:opacity .2s}
+.cta-btn:hover{opacity:.85}
+footer{border-top:1px solid var(--ink-20);padding:40px;text-align:center;font-size:12px;color:var(--ink-60);letter-spacing:.06em}
+footer a{color:var(--ink-60);text-decoration:none}
+footer a:hover{color:var(--ink)}
+@media(max-width:700px){
+  nav{padding:20px 24px}
+  main{grid-template-columns:1fr;gap:48px;padding:120px 24px 80px}
+  .left p{max-width:100%}
+}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nav-logo">Picasso <em>ai</em></a>
+  <a href="/" class="nav-back">← Back to site</a>
+</nav>
+<main>
+  <div class="left">
+    <div class="eyebrow">Contact</div>
+    <h1>Let's<br><em>talk.</em></h1>
+    <p>Have a question about Picasso ai, need help with your account, or want to explore what we can do for your business? We're here.</p>
+  </div>
+  <div class="right">
+    <div class="contact-item">
+      <div class="contact-label">General Inquiries</div>
+      <div class="contact-value"><a href="mailto:info@denbighpartners.com">info@denbighpartners.com</a></div>
+      <div class="contact-sub">We respond within one business day</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-label">Support</div>
+      <div class="contact-value"><a href="mailto:support@denbighpartners.com">support@denbighpartners.com</a></div>
+      <div class="contact-sub">Account help, billing, and technical issues</div>
+    </div>
+    <div class="contact-item">
+      <div class="contact-label">Location</div>
+      <div class="contact-value">Charleston, South Carolina</div>
+      <div class="contact-sub">Eastern Time</div>
+    </div>
+    <div class="cta-block">
+      <a href="https://getpicasso.ai" class="cta-btn">Get started free</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <p>© 2026 Denbigh Partners LLC &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/terms">Terms</a> &nbsp;·&nbsp; <a href="/eula">EULA</a></p>
+</footer>
+</body>
+</html>
