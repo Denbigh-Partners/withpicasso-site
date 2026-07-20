@@ -429,12 +429,12 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 
 /* ── VERTICAL CARD PHONE OVERLAP ── */
 .vcomp{position:relative;max-width:860px;margin:0 auto;}
-.vphone{position:absolute;top:-72px;right:-48px;z-index:5;width:300px;background:linear-gradient(145deg,#e8e8ea 0%,#c4c4c8 18%,#a8a8ac 40%,#d6d6da 62%,#b0b0b4 100%);border-radius:60px;padding:6px;box-shadow:0 40px 80px rgba(26,26,24,.26),0 8px 24px rgba(26,26,24,.14);}
-.vphone::before{content:'';position:absolute;left:-2px;top:104px;width:2.5px;height:24px;background:linear-gradient(90deg,#9a9a9e,#c0c0c4);border-radius:2px 0 0 2px;box-shadow:0 38px 0 linear-gradient(90deg,#9a9a9e,#c0c0c4);}
-.vphone::after{content:'';position:absolute;right:-2px;top:126px;width:2.5px;height:50px;background:linear-gradient(270deg,#9a9a9e,#c0c0c4);border-radius:0 2px 2px 0;}
-.vphone .vp-frame-inner{background:#0a0a09;border-radius:56px;padding:4px;}
-.vphone .vp-screen{background:#F6F4EE;border-radius:52px;overflow:hidden;position:relative;padding:46px 15px 22px;}
-.vphone .vp-island{position:absolute;top:14px;left:50%;transform:translateX(-50%);width:95px;height:28px;background:#0a0a09;border-radius:100px;z-index:3;}
+.vphone{position:absolute;top:-90px;right:-40px;z-index:5;width:308px;background:linear-gradient(145deg,#dcdce0 0%,#b6b6ba 20%,#9c9ca0 42%,#cacace 64%,#a4a4a8 100%);border-radius:58px;padding:4px;box-shadow:0 50px 100px rgba(26,26,24,.28),0 12px 30px rgba(26,26,24,.16);}
+.vphone::before{content:'';position:absolute;left:-2px;top:150px;width:2px;height:30px;background:#a0a0a4;border-radius:2px 0 0 2px;box-shadow:0 44px 0 #a0a0a4;}
+.vphone::after{content:'';position:absolute;right:-2px;top:172px;width:2px;height:64px;background:#a0a0a4;border-radius:0 2px 2px 0;}
+.vphone .vp-frame-inner{background:#0a0a09;border-radius:54px;padding:3px;}
+.vphone .vp-screen{background:#F6F4EE;border-radius:52px;overflow:hidden;position:relative;padding:52px 16px 30px;min-height:600px;display:flex;flex-direction:column;}
+.vphone .vp-island{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:98px;height:29px;background:#0a0a09;border-radius:100px;z-index:3;}
 
 .vphone .vp-greet{color:var(--green);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:0 10px;}
 .vphone .vp-title{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500;padding:2px 10px 0;}
@@ -451,7 +451,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vphone .vp-metric .vp-k{color:var(--ink-40);font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;}
 .vphone .vp-metric .vp-v{font-family:'Cormorant Garamond',serif;font-size:17px;margin-top:3px;}
 .vphone .vp-metric .vp-d{font-family:'Jost',sans-serif;font-size:8px;margin-top:1px;}
-@media(max-width:920px){.vphone{display:none;}}
+@media(max-width:980px){.vphone{display:none;}}
 
 .vask-wrap{display:flex;justify-content:center;margin-top:24px;}
 .vask{display:inline-flex;align-items:center;gap:14px;background:var(--green);border-radius:100px;padding:13px 26px;cursor:default;}
