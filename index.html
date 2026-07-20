@@ -380,6 +380,52 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .hero-peek-window .w-dot:nth-child(3){background:#61C554;}
 .hero-peek-window .app-url{margin-left:auto;margin-right:auto;font-family:'Jost',sans-serif;font-size:12px;color:var(--ink-40);letter-spacing:.02em;}
 @media(max-width:600px){.hero-peek{padding:0 20px;}.hero-peek-window{border-radius:12px 12px 0 0;}}
+
+/* ── VERTICAL CARD ── */
+.vtabs{display:flex;gap:10px;justify-content:center;margin:48px 0 40px;flex-wrap:wrap;}
+.vtab{padding:10px 20px;border-radius:100px;border:1px solid var(--ink-12);font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.04em;color:var(--ink-40);background:transparent;display:flex;align-items:center;gap:9px;}
+.vtab.active{background:var(--ink);color:var(--cream);border-color:var(--ink);}
+.vtab .soon{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-40);border:1px solid var(--ink-12);border-radius:100px;padding:2px 8px;}
+.vbrief{max-width:860px;margin:0 auto;background:#F6F4EE;border:1px solid rgba(26,26,23,.08);border-radius:20px;overflow:hidden;box-shadow:0 40px 90px rgba(26,26,23,.09);}
+.vbrief-bar{display:flex;align-items:center;gap:8px;padding:16px 22px;border-bottom:1px solid rgba(26,26,23,.08);}
+.vbrief-bar .vdot{width:11px;height:11px;border-radius:50%;}
+.vbrief-bar .vr{background:#E5836B;}.vbrief-bar .vy{background:#E6B15A;}.vbrief-bar .vg{background:#7BA86B;}
+.vbrief-bar .vpill{margin:0 auto;font-family:'Jost',sans-serif;font-size:12px;color:var(--ink-40);letter-spacing:.04em;background:var(--beige);padding:5px 16px;border-radius:6px;}
+.vbrief-body{padding:32px 38px 40px;}
+.vgreet{color:var(--green);font-family:'Jost',sans-serif;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;}
+.vbrief-body h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:38px;margin:6px 0 4px;}
+.vbrief-body .vdate{color:var(--ink-40);font-family:'Jost',sans-serif;font-size:13.5px;margin-bottom:8px;}
+.vcritical{display:inline-flex;align-items:center;gap:8px;color:#B5493B;font-family:'Jost',sans-serif;font-size:13.5px;margin-bottom:28px;}
+.vcritical .vpip{width:8px;height:8px;border-radius:50%;background:#B5493B;}
+.vtoprow{display:grid;grid-template-columns:1fr 1.15fr;gap:22px;}
+.vhealth{background:var(--cream);border-radius:16px;padding:24px 26px;}
+.vhealth .vlab{color:var(--green);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px;}
+.vhealth .vscoreline{display:flex;align-items:baseline;gap:12px;}
+.vhealth .vnum{font-family:'Cormorant Garamond',serif;font-size:62px;font-weight:500;line-height:1;}
+.vhealth .vtag{background:#E4EBE3;color:var(--green);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:100px;}
+.vpillars{margin-top:20px;display:flex;flex-direction:column;gap:11px;}
+.vpillar .vprow{display:flex;justify-content:space-between;align-items:center;}
+.vpillar .vpname{font-family:'Jost',sans-serif;font-size:13px;color:var(--ink-40);}
+.vpillar .vpval{font-family:'Cormorant Garamond',serif;font-size:19px;color:var(--ink);}
+.vpillar .vpbar{height:5px;background:var(--beige);border-radius:100px;position:relative;margin-top:5px;}
+.vpillar .vpbar i{position:absolute;left:0;top:0;bottom:0;border-radius:100px;background:var(--green);}
+.vinsight{background:var(--cream);border-radius:16px;padding:24px 26px;display:flex;flex-direction:column;}
+.vinsight .vlab{color:var(--green);font-family:'Jost',sans-serif;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+.vinsight .vrank{display:inline-flex;align-items:center;gap:8px;color:#B5493B;font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px;}
+.vinsight h4{font-family:'Cormorant Garamond',serif;font-size:27px;font-weight:500;margin-bottom:12px;line-height:1.15;}
+.vinsight p{color:var(--ink-40);font-family:'Jost',sans-serif;font-size:15px;line-height:1.65;font-weight:300;}
+.vinsight p b{color:var(--ink);font-weight:500;}
+.vinsight .vdeploy{margin-top:16px;padding-top:16px;border-top:1px solid rgba(26,26,23,.08);font-family:'Jost',sans-serif;font-size:14px;color:var(--ink-40);}
+.vinsight .vdeploy b{font-family:'Cormorant Garamond',serif;font-size:22px;color:var(--green);font-weight:600;}
+.vmetrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px;}
+.vmetric{background:var(--cream);border-radius:14px;padding:16px 18px;}
+.vmetric .vk{color:var(--ink-40);font-family:'Jost',sans-serif;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;}
+.vmetric .vv{font-family:'Cormorant Garamond',serif;font-size:26px;margin-top:6px;}
+.vmetric .vd{font-family:'Jost',sans-serif;font-size:12px;margin-top:2px;}
+.vmetric .vd.vup{color:var(--green);}.vmetric .vd.vdown{color:#B5493B;}.vmetric .vd.vflat{color:var(--ink-40);}
+.vstack-note{text-align:center;margin-top:34px;color:var(--ink-40);font-family:'Jost',sans-serif;font-size:13px;font-weight:300;letter-spacing:.02em;}
+.vstack-note b{color:var(--ink-60);font-weight:400;}
+@media(max-width:720px){.vtoprow{grid-template-columns:1fr;}.vmetrics{grid-template-columns:repeat(2,1fr);}}
 </style>
     </head>
 <body>
@@ -486,75 +532,58 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
   <h2 class="reveal-title sr sr-delay-1">A full finance team.<br><em>Working while you sleep.</em></h2>
   <p class="reveal-sub sr sr-delay-2">Picasso ai reads every transaction across your POS, accounting software, and bank accounts. It calculates your margins, forecasts your cash position, scores your business health, and identifies the one or two things that actually need your attention. Every number is calculated from your real data. Never estimated. Never approximated. By the time your alarm goes off, it&#8217;s already done.</p>
 
-  <div class="app-wrap sr sr-delay-3">
-    <div class="app-window">
-      <div class="app-bar">
-        <div class="w-dot"></div><div class="w-dot"></div><div class="w-dot"></div>
-        <div class="app-url">Picasso ai · Morning Brief</div>
+  <div class="vtabs sr sr-delay-3">
+      <span class="vtab active">&#9670; Shopify &amp; DTC</span>
+      <span class="vtab">Restaurants <span class="soon">Soon</span></span>
+      <span class="vtab">Dental <span class="soon">Soon</span></span>
+      <span class="vtab">Fitness &amp; Wellness <span class="soon">Soon</span></span>
+    </div>
+
+    <div class="vbrief sr sr-delay-3">
+      <div class="vbrief-bar">
+        <span class="vdot vr"></span><span class="vdot vy"></span><span class="vdot vg"></span>
+        <span class="vpill">Picasso ai &middot; The Brief</span>
       </div>
-      <div class="app-body">
-        <div class="mb-top">
-          <div>
-            <div class="mb-greeting">Good morning, Sara</div>
-            <div class="mb-title">Morning Brief</div>
-            <div class="mb-date">Monday, March 10 · Coastal Home Goods</div>
-          </div>
-          <div class="mb-logo">
-            <svg viewBox="0 0 24 24"><path d="M12 3L4 8v13h16V8L12 3zm0 2.5L18 9v10H6V9l6-3.5zm-1 5v5h2v-5h-2z"/></svg>
-          </div>
-        </div>
-        <div class="health">
-          <div>
-            <div class="h-score-label">Business Health</div>
-            <div class="h-score-num">84</div>
-            <div class="h-score-trend">↑ 3 pts from last week</div>
-          </div>
-          <div class="h-right">
-            <div class="h-badge">Strong</div>
-            <div class="h-rank">Top 18% this month</div>
-          </div>
-        </div>
-        <div class="p-insight">
-          <div class="p-chip">Picasso&#8217;s Insight</div>
-          <div class="p-text">Your weekend revenue was <strong>$4,840</strong>, your best Saturday in 6 weeks. The Linen Collection drove 38% of it. You have <strong>11 units left</strong> and they're moving fast. Reorder today or you'll be out by Thursday.</div>
-        </div>
-        <div class="metrics">
-          <div class="m-card">
-            <div class="m-label">Revenue · 7d</div>
-            <div class="m-val">$18.4k</div>
-            <div class="m-delta up">↑ 12% vs last week</div>
-          </div>
-          <div class="m-card">
-            <div class="m-label">Cash on hand</div>
-            <div class="m-val">$31.2k</div>
-            <div class="m-delta flat">47 days runway</div>
-          </div>
-          <div class="m-card">
-            <div class="m-label">Avg order</div>
-            <div class="m-val">$94</div>
-            <div class="m-delta up">↑ $7 vs prior</div>
-          </div>
-        </div>
-        <div class="actions">
-          <div class="action warn">
-            <div class="action-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 2L2 19h20L12 2zm0 3l7.5 13h-15L12 5zm-1 5v4h2v-4h-2zm0 6v2h2v-2h-2z"/></svg>
+      <div class="vbrief-body">
+        <div class="vgreet">Good morning, Sara</div>
+        <h3>The Brief</h3>
+        <div class="vdate">Monday, July 20 &middot; La Costera</div>
+        <div class="vcritical"><span class="vpip"></span> 1 critical item needs your attention</div>
+
+        <div class="vtoprow">
+          <div class="vhealth">
+            <div class="vlab">Business Health</div>
+            <div class="vscoreline">
+              <span class="vnum">62</span>
+              <span class="vtag">Watch</span>
             </div>
-            <div>
-              <div class="action-title">Reorder: Linen Collection · 11 units remaining</div>
-              <div class="action-desc">At current velocity you sell out Thursday. Reorder takes 5 days. Act today.</div>
+            <div class="vpillars">
+              <div class="vpillar"><div class="vprow"><span class="vpname">Financial</span><span class="vpval">55</span></div><div class="vpbar"><i style="width:55%"></i></div></div>
+              <div class="vpillar"><div class="vprow"><span class="vpname">Operational</span><span class="vpval">64</span></div><div class="vpbar"><i style="width:64%"></i></div></div>
+              <div class="vpillar"><div class="vprow"><span class="vpname">Customer</span><span class="vpval">52</span></div><div class="vpbar"><i style="width:52%"></i></div></div>
+              <div class="vpillar"><div class="vprow"><span class="vpname">Growth &amp; Risk</span><span class="vpval">82</span></div><div class="vpbar"><i style="width:82%"></i></div></div>
             </div>
           </div>
-          <div class="action good">
-            <div class="action-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
-              <div class="action-title">Payroll clears Friday. You're covered.</div>
-              <div class="action-desc">$6,200 due. Cash position comfortable. No action needed.</div>
-            </div>
+
+          <div class="vinsight">
+            <div class="vlab">&#10022; Picasso&#8217;s Insight</div>
+            <div class="vrank">&#9679; #1 &middot; Action needed</div>
+            <h4>Free up cash stuck in inventory.</h4>
+            <p>Your cash is tied up for <b>220 days</b>, mostly because inventory sits <b>197 days</b> before it sells. Order less at a time, or negotiate longer supplier terms, to free it up.</p>
+            <div class="vdeploy">Real cash you could free: <b>$22.4k</b></div>
           </div>
         </div>
+
+        <div class="vmetrics">
+          <div class="vmetric"><div class="vk">Shopify &middot; Jul MTD</div><div class="vv">$122k</div><div class="vd vdown">&#8595; 1.6% YoY</div></div>
+          <div class="vmetric"><div class="vk">Cash on hand</div><div class="vv">$31.2k</div><div class="vd vflat">3.0 mo coverage</div></div>
+          <div class="vmetric"><div class="vk">Cash cycle</div><div class="vv">220 days</div><div class="vd vdown">Inventory-heavy</div></div>
+          <div class="vmetric"><div class="vk">EBITDA margin</div><div class="vv">24.2%</div><div class="vd vup">vs 18% target</div></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="vstack-note sr">Powered by your live stack &#8212; <b>Shopify &middot; QuickBooks &middot; ShipHero &middot; Triple Whale &middot; Plaid</b>. No single tool sees all five. Picasso does.</p>
         <div class="ask">
           <div class="ask-placeholder">Ask Picasso anything about your business...</div>
           <div class="ask-send">Ask →</div>
