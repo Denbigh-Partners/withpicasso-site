@@ -433,7 +433,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vphone::before{content:'';position:absolute;left:-2px;top:150px;width:2px;height:30px;background:#a0a0a4;border-radius:2px 0 0 2px;box-shadow:0 44px 0 #a0a0a4;}
 .vphone::after{content:'';position:absolute;right:-2px;top:172px;width:2px;height:64px;background:#a0a0a4;border-radius:0 2px 2px 0;}
 .vphone .vp-frame-inner{background:#0a0a09;border-radius:54px;padding:3px;}
-.vphone .vp-screen{background:#F6F4EE;border-radius:52px;overflow:hidden;position:relative;padding:52px 16px 28px;min-height:560px;display:flex;flex-direction:column;}
+.vphone .vp-screen{background:#F6F4EE;border-radius:52px;overflow:hidden;position:relative;padding:52px 16px 28px;min-height:640px;display:flex;flex-direction:column;}
 .vphone .vp-island{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:98px;height:29px;background:#0a0a09;border-radius:100px;z-index:3;}
 
 .vphone .vp-greet{color:var(--green);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:0 10px;}
@@ -457,6 +457,13 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vask{display:inline-flex;align-items:center;gap:14px;background:var(--green);border-radius:100px;padding:13px 26px;cursor:default;}
 .vask .vask-text{font-family:'Jost',sans-serif;font-size:12px;color:rgba(255,255,255,.65);font-weight:300;}
 .vask .vask-send{font-family:'Jost',sans-serif;font-size:11px;color:#fff;letter-spacing:.1em;text-transform:uppercase;font-weight:500;white-space:nowrap;}
+
+.vphone .vp-pillars{margin-top:14px;display:flex;flex-direction:column;gap:9px;}
+.vphone .vp-prow{display:flex;justify-content:space-between;align-items:baseline;}
+.vphone .vp-pname{font-family:'Jost',sans-serif;font-size:11px;color:var(--ink-40);}
+.vphone .vp-pval{font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--ink);}
+.vphone .vp-pbar{height:4px;background:var(--beige);border-radius:100px;margin-top:4px;position:relative;}
+.vphone .vp-pbar i{position:absolute;left:0;top:0;bottom:0;border-radius:100px;background:var(--green);}
 </style>
     </head>
 <body>
@@ -630,6 +637,12 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
         <div class="vp-block">
           <div class="vp-lab">Business Health</div>
           <div class="vp-health"><span class="vp-num">62</span><span class="vp-tag">Watch</span></div>
+          <div class="vp-pillars">
+            <div class="vp-pillar"><div class="vp-prow"><span class="vp-pname">Financial</span><span class="vp-pval">55</span></div><div class="vp-pbar"><i style="width:55%"></i></div></div>
+            <div class="vp-pillar"><div class="vp-prow"><span class="vp-pname">Operational</span><span class="vp-pval">64</span></div><div class="vp-pbar"><i style="width:64%"></i></div></div>
+            <div class="vp-pillar"><div class="vp-prow"><span class="vp-pname">Customer</span><span class="vp-pval">52</span></div><div class="vp-pbar"><i style="width:52%"></i></div></div>
+            <div class="vp-pillar"><div class="vp-prow"><span class="vp-pname">Growth &amp; Risk</span><span class="vp-pval">82</span></div><div class="vp-pbar"><i style="width:82%"></i></div></div>
+          </div>
         </div>
         <div class="vp-block">
           <div class="vp-lab">&#10022; Picasso&#8217;s Insight</div>
