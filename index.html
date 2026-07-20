@@ -425,7 +425,31 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vmetric .vd.vup{color:var(--green);}.vmetric .vd.vdown{color:#B5493B;}.vmetric .vd.vflat{color:var(--ink-40);}
 .vstack-note{text-align:center;margin-top:34px;color:var(--ink-40);font-family:'Jost',sans-serif;font-size:13px;font-weight:300;letter-spacing:.02em;}
 .vstack-note b{color:var(--ink-60);font-weight:400;}
-@media(max-width:720px){.vtoprow{grid-template-columns:1fr;}.vmetrics{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:720px){
+  .vtoprow{grid-template-columns:1fr;}
+  .vmetrics{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  .vtabs{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;gap:8px;margin:36px 0 32px;padding:0 20px 4px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .vtabs::-webkit-scrollbar{display:none;}
+  .vtab{flex:0 0 auto;padding:9px 16px;font-size:12.5px;white-space:nowrap;}
+  .vbrief-body{padding:24px 22px 28px;}
+  .vbrief-body h3{font-size:30px;}
+  .vcritical{margin-bottom:22px;}
+  .vhealth,.vinsight{padding:20px 20px;}
+  .vhealth .vnum{font-size:52px;}
+  .vinsight h4{font-size:23px;}
+  .vinsight p{font-size:14px;}
+  .vmetrics{gap:10px;margin-top:16px;}
+  .vmetric{padding:14px 14px;}
+  .vmetric .vk{font-size:9.5px;letter-spacing:.06em;}
+  .vmetric .vv{font-size:23px;}
+  .vmetric .vd{font-size:11px;}
+  .vask-wrap{margin-top:20px;}
+  .vask{padding:12px 20px;}
+  .vask .vask-text{font-size:11.5px;}
+  .vstack-note{margin-top:28px;font-size:12px;padding:0 12px;}
+}
 
 /* ── VERTICAL CARD PHONE OVERLAP ── */
 .vcomp{position:relative;max-width:860px;margin:0 auto;}
