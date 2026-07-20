@@ -433,7 +433,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vphone::before{content:'';position:absolute;left:-2px;top:150px;width:2px;height:30px;background:#a0a0a4;border-radius:2px 0 0 2px;box-shadow:0 44px 0 #a0a0a4;}
 .vphone::after{content:'';position:absolute;right:-2px;top:172px;width:2px;height:64px;background:#a0a0a4;border-radius:0 2px 2px 0;}
 .vphone .vp-frame-inner{background:#0a0a09;border-radius:54px;padding:3px;}
-.vphone .vp-screen{background:#F6F4EE;border-radius:52px;overflow:hidden;position:relative;padding:52px 16px 30px;min-height:600px;display:flex;flex-direction:column;}
+.vphone .vp-screen{background:#F6F4EE;border-radius:52px;overflow:hidden;position:relative;padding:52px 16px 28px;min-height:560px;display:flex;flex-direction:column;}
 .vphone .vp-island{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:98px;height:29px;background:#0a0a09;border-radius:100px;z-index:3;}
 
 .vphone .vp-greet{color:var(--green);font-family:'Jost',sans-serif;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:0 10px;}
@@ -446,7 +446,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vphone .vp-tag{background:#E4EBE3;color:var(--green);font-family:'Jost',sans-serif;font-size:8px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:100px;}
 .vphone .vp-ins{font-family:'Jost',sans-serif;font-size:13px;line-height:1.5;color:var(--ink-40);font-weight:300;}
 .vphone .vp-ins b{color:var(--ink);font-weight:500;}
-.vphone .vp-metrics{display:flex;gap:8px;margin:0 6px;}
+.vphone .vp-metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 6px;}
 .vphone .vp-metric{flex:1;background:var(--cream);border-radius:11px;padding:10px 11px;}
 .vphone .vp-metric .vp-k{color:var(--ink-40);font-family:'Jost',sans-serif;font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;}
 .vphone .vp-metric .vp-v{font-family:'Cormorant Garamond',serif;font-size:17px;margin-top:3px;}
@@ -636,8 +636,10 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
           <div class="vp-ins"><b>Free up cash stuck in inventory.</b> Tied up 220 days &mdash; free up <b>$22.4k</b>.</div>
         </div>
         <div class="vp-metrics">
-          <div class="vp-metric"><div class="vp-k">Jul MTD</div><div class="vp-v">$122k</div><div class="vp-d" style="color:#B5493B;">&#8595;1.6%</div></div>
-          <div class="vp-metric"><div class="vp-k">Cash</div><div class="vp-v">$31.2k</div><div class="vp-d" style="color:var(--ink-40);">3.0 mo</div></div>
+          <div class="vp-metric"><div class="vp-k">Shopify &middot; Jul MTD</div><div class="vp-v">$122k</div><div class="vp-d" style="color:#B5493B;">&#8595; 1.6% YoY</div></div>
+          <div class="vp-metric"><div class="vp-k">Cash on hand</div><div class="vp-v">$31.2k</div><div class="vp-d" style="color:var(--ink-40);">3.0 mo</div></div>
+          <div class="vp-metric"><div class="vp-k">Cash cycle</div><div class="vp-v">220 days</div><div class="vp-d" style="color:#B5493B;">Inv-heavy</div></div>
+          <div class="vp-metric"><div class="vp-k">EBITDA margin</div><div class="vp-v">24.2%</div><div class="vp-d" style="color:var(--green);">vs 18%</div></div>
         </div>
         </div>
         </div>
