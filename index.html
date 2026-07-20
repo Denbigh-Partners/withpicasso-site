@@ -429,11 +429,12 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 
 /* ── VERTICAL CARD PHONE OVERLAP ── */
 .vcomp{position:relative;max-width:860px;margin:0 auto;}
-.vphone{position:absolute;top:-56px;right:-38px;z-index:5;width:248px;background:linear-gradient(160deg,#3a3a37 0%,#1a1a18 45%,#2a2a27 100%);border-radius:52px;padding:11px;box-shadow:0 40px 80px rgba(26,26,24,.28),0 8px 24px rgba(26,26,24,.16),inset 0 0 0 1px rgba(255,255,255,.1),inset 0 1px 0 rgba(255,255,255,.16);}
-.vphone::before{content:'';position:absolute;left:-3px;top:96px;width:3px;height:26px;background:#151513;border-radius:2px 0 0 2px;box-shadow:0 40px 0 #151513;}
-.vphone::after{content:'';position:absolute;right:-3px;top:118px;width:3px;height:52px;background:#151513;border-radius:0 2px 2px 0;}
-.vphone .vp-screen{background:#F6F4EE;border-radius:42px;overflow:hidden;position:relative;padding:34px 10px 18px;}
-.vphone .vp-island{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:82px;height:24px;background:#0a0a09;border-radius:100px;z-index:3;}
+.vphone{position:absolute;top:-56px;right:-38px;z-index:5;width:246px;background:linear-gradient(145deg,#e8e8ea 0%,#c4c4c8 18%,#a8a8ac 40%,#d6d6da 62%,#b0b0b4 100%);border-radius:50px;padding:5px;box-shadow:0 40px 80px rgba(26,26,24,.26),0 8px 24px rgba(26,26,24,.14);}
+.vphone::before{content:'';position:absolute;left:-2px;top:104px;width:2.5px;height:24px;background:linear-gradient(90deg,#9a9a9e,#c0c0c4);border-radius:2px 0 0 2px;box-shadow:0 38px 0 linear-gradient(90deg,#9a9a9e,#c0c0c4);}
+.vphone::after{content:'';position:absolute;right:-2px;top:126px;width:2.5px;height:50px;background:linear-gradient(270deg,#9a9a9e,#c0c0c4);border-radius:0 2px 2px 0;}
+.vphone .vp-frame-inner{background:#0a0a09;border-radius:46px;padding:3px;}
+.vphone .vp-screen{background:#F6F4EE;border-radius:43px;overflow:hidden;position:relative;padding:38px 12px 18px;}
+.vphone .vp-island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:78px;height:23px;background:#0a0a09;border-radius:100px;z-index:3;}
 
 .vphone .vp-greet{color:var(--green);font-family:'Jost',sans-serif;font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;padding:0 8px;}
 .vphone .vp-title{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;padding:2px 8px 0;}
@@ -452,9 +453,9 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vphone .vp-metric .vp-d{font-family:'Jost',sans-serif;font-size:8px;margin-top:1px;}
 @media(max-width:820px){.vphone{display:none;}}
 
-.vask{display:flex;align-items:center;gap:12px;background:var(--green);border-radius:12px;padding:14px 18px;margin-top:22px;cursor:default;}
-.vask .vask-text{flex:1;font-family:'Jost',sans-serif;font-size:12px;color:rgba(255,255,255,.55);font-weight:300;}
-.vask .vask-send{font-family:'Jost',sans-serif;font-size:11px;color:#fff;letter-spacing:.1em;text-transform:uppercase;font-weight:400;white-space:nowrap;}
+.vask{display:inline-flex;align-items:center;gap:14px;background:var(--green);border-radius:100px;padding:12px 22px;margin-top:22px;cursor:default;}
+.vask .vask-text{font-family:'Jost',sans-serif;font-size:12px;color:rgba(255,255,255,.65);font-weight:300;}
+.vask .vask-send{font-family:'Jost',sans-serif;font-size:11px;color:#fff;letter-spacing:.1em;text-transform:uppercase;font-weight:500;white-space:nowrap;}
 </style>
     </head>
 <body>
@@ -617,6 +618,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
       </div>
 </div>
       <div class="vphone">
+        <div class="vp-frame-inner">
         <div class="vp-screen">
         <div class="vp-island"></div>
         <div class="vp-greet">Good morning, Sara</div>
@@ -633,6 +635,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
         <div class="vp-metrics">
           <div class="vp-metric"><div class="vp-k">Jul MTD</div><div class="vp-v">$122k</div><div class="vp-d" style="color:#B5493B;">&#8595;1.6%</div></div>
           <div class="vp-metric"><div class="vp-k">Cash</div><div class="vp-v">$31.2k</div><div class="vp-d" style="color:var(--ink-40);">3.0 mo</div></div>
+        </div>
         </div>
         </div>
       </div>
