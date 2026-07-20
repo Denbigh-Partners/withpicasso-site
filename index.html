@@ -368,7 +368,18 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .int-footnote{text-align:center;font-family:'Jost',sans-serif;font-size:13px;font-weight:300;color:var(--ink-60);margin-top:40px;line-height:1.8;}
 @media(max-width:600px){.int-grid{grid-template-columns:1fr;}}
 
-.contact{background:var(--cream);padding:100px 24px;}.contact-inner{max-width:960px;margin:0 auto;}.contact-inner .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);margin:12px 0 56px;}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--ink-12);border:1px solid var(--ink-12);border-radius:16px;overflow:hidden;}.contact-item{background:var(--cream);padding:40px 36px;}.contact-label{font-family:'Jost',sans-serif;font-size:11px;font-weight:500;letter-spacing:.12em;color:var(--ink-60);margin-bottom:12px;}.contact-email{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--ink);text-decoration:none;}.contact-email:hover{color:var(--green);}.contact-note{font-family:'Jost',sans-serif;font-size:13px;color:var(--ink-60);margin-top:8px;}@media(max-width:680px){.contact-grid{grid-template-columns:1fr;}}.contact{background:var(--cream);padding:100px 24px;}.contact-inner{max-width:960px;margin:0 auto;}.contact-inner .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);margin:12px 0 56px;}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--ink-12);border:1px solid var(--ink-12);border-radius:16px;overflow:hidden;}.contact-item{background:var(--cream);padding:40px 36px;}.contact-label{font-family:'Jost',sans-serif;font-size:11px;font-weight:500;letter-spacing:.12em;color:var(--ink-60);margin-bottom:12px;}.contact-email{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--ink);text-decoration:none;}.contact-email:hover{color:var(--green);}.contact-note{font-family:'Jost',sans-serif;font-size:13px;color:var(--ink-60);margin-top:8px;}@media(max-width:680px){.contact-grid{grid-template-columns:1fr;}}</style>
+.contact{background:var(--cream);padding:100px 24px;}.contact-inner{max-width:960px;margin:0 auto;}.contact-inner .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);margin:12px 0 56px;}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--ink-12);border:1px solid var(--ink-12);border-radius:16px;overflow:hidden;}.contact-item{background:var(--cream);padding:40px 36px;}.contact-label{font-family:'Jost',sans-serif;font-size:11px;font-weight:500;letter-spacing:.12em;color:var(--ink-60);margin-bottom:12px;}.contact-email{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--ink);text-decoration:none;}.contact-email:hover{color:var(--green);}.contact-note{font-family:'Jost',sans-serif;font-size:13px;color:var(--ink-60);margin-top:8px;}@media(max-width:680px){.contact-grid{grid-template-columns:1fr;}}.contact{background:var(--cream);padding:100px 24px;}.contact-inner{max-width:960px;margin:0 auto;}.contact-inner .section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3rem);font-weight:300;color:var(--ink);margin:12px 0 56px;}.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--ink-12);border:1px solid var(--ink-12);border-radius:16px;overflow:hidden;}.contact-item{background:var(--cream);padding:40px 36px;}.contact-label{font-family:'Jost',sans-serif;font-size:11px;font-weight:500;letter-spacing:.12em;color:var(--ink-60);margin-bottom:12px;}.contact-email{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:400;color:var(--ink);text-decoration:none;}.contact-email:hover{color:var(--green);}.contact-note{font-family:'Jost',sans-serif;font-size:13px;color:var(--ink-60);margin-top:8px;}@media(max-width:680px){.contact-grid{grid-template-columns:1fr;}}
+/* ── HERO PEEK ── */
+.hero-peek{display:flex;justify-content:center;padding:0 40px 0;margin-top:-20px;position:relative;z-index:1;}
+.hero-peek-window{width:100%;max-width:780px;background:#fff;border-radius:16px 16px 0 0;box-shadow:0 -4px 40px rgba(0,0,0,.04);overflow:hidden;}
+.hero-peek-window .app-bar{display:flex;align-items:center;gap:8px;padding:14px 20px;background:rgba(0,0,0,.03);border-bottom:1px solid rgba(0,0,0,.06);}
+.hero-peek-window .w-dot{width:10px;height:10px;border-radius:50%;}
+.hero-peek-window .w-dot:nth-child(1){background:#EC6A5E;}
+.hero-peek-window .w-dot:nth-child(2){background:#F4BF4F;}
+.hero-peek-window .w-dot:nth-child(3){background:#61C554;}
+.hero-peek-window .app-url{margin-left:auto;margin-right:auto;font-family:'Jost',sans-serif;font-size:12px;color:var(--ink-40);letter-spacing:.02em;}
+@media(max-width:600px){.hero-peek{padding:0 20px;}.hero-peek-window{border-radius:12px 12px 0 0;}}
+</style>
     </head>
 <body>
 
@@ -421,6 +432,20 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
     <span class="hero-scroll-label">Scroll</span>
   </div>
 </section>
+
+<!-- HERO PEEK -->
+<div class="hero-peek">
+  <div class="hero-peek-window">
+    <div class="app-bar">
+      <div class="w-dot"></div><div class="w-dot"></div><div class="w-dot"></div>
+      <div class="app-url">Picasso ai · Morning Brief</div>
+    </div>
+    <div style="padding:32px 40px 40px;">
+      <div style="font-family:'Jost',sans-serif;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:8px;">Good morning, Sara</div>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:clamp(28px,4vw,42px);font-weight:300;color:var(--ink-30);font-style:italic;line-height:1.15;">Monday's Brief</div>
+    </div>
+  </div>
+</div>
 
 <!-- PROBLEM -->
 <section class="problem">
