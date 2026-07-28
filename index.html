@@ -501,6 +501,27 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .blind-sub{max-width:540px;margin:32px auto 0;color:var(--ink-60);font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.8;}
 .blind-foot{margin-top:24px;color:var(--ink-40);font-family:'Jost',sans-serif;font-size:13px;font-weight:300;letter-spacing:.02em;}
 @media(max-width:600px){.blind{padding:96px 24px;}}
+
+/* ── BEAT 2: CFO COST ANCHOR ── */
+.cfo{padding:140px 40px;background:var(--cream);border-top:1px solid var(--ink-12);}
+.cfo-inner{max-width:960px;margin:0 auto;}
+.cfo-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(36px,4.5vw,60px);line-height:1.06;letter-spacing:-.02em;color:var(--ink);text-align:center;}
+.cfo-title em{font-style:italic;color:var(--green);}
+.cfo-lede{max-width:560px;margin:24px auto 60px;text-align:center;color:var(--ink-60);font-family:'Jost',sans-serif;font-weight:300;font-size:15px;line-height:1.8;}
+.cfo-compare{display:grid;grid-template-columns:repeat(3,1fr);max-width:900px;margin:0 auto;border:1px solid var(--ink-12);border-radius:20px;overflow:hidden;background:#F6F4EE;}
+.cfo-col{padding:40px 30px;text-align:center;border-right:1px solid var(--ink-12);}
+.cfo-col:last-child{border-right:none;}
+.cfo-col.cfo-you{background:var(--green-soft);}
+.cfo-role{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-40);font-weight:400;margin-bottom:20px;}
+.cfo-col.cfo-you .cfo-role{color:var(--green);}
+.cfo-price{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:46px;line-height:1;letter-spacing:-.02em;color:var(--ink);}
+.cfo-per{color:var(--ink-40);font-family:'Jost',sans-serif;font-size:13px;font-weight:300;margin-top:10px;}
+.cfo-note{color:var(--ink-60);font-family:'Jost',sans-serif;font-size:13px;font-weight:300;line-height:1.6;margin-top:20px;}
+.cfo-kicker{text-align:center;margin-top:44px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(22px,2.6vw,28px);line-height:1.3;color:var(--ink);}
+.cfo-kicker b{font-style:normal;font-weight:500;color:var(--green);}
+.cfo-disc{text-align:center;margin-top:22px;color:var(--ink-40);font-family:'Jost',sans-serif;font-size:12px;font-weight:300;line-height:1.6;max-width:520px;margin-left:auto;margin-right:auto;}
+@media(max-width:780px){.cfo-compare{grid-template-columns:1fr;}.cfo-col{border-right:none;border-bottom:1px solid var(--ink-12);}.cfo-col:last-child{border-bottom:none;}}
+@media(max-width:600px){.cfo{padding:96px 24px;}}
 </style>
     </head>
 <body>
@@ -683,7 +704,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
         </div>
         <div class="vp-block">
           <div class="vp-lab">&#10022; Picasso ai&#8217;s Insight</div>
-          <div class="vp-ins"><b>Free up cash stuck in inventory.</b> Tied up 220 days &mdash; free up <b>$22.4k</b>.</div>
+          <div class="vp-ins"><b>Free up cash stuck in inventory.</b> Tied up 220 days. Frees up <b>$22.4k</b>.</div>
         </div>
         <div class="vp-metrics">
           <div class="vp-metric"><div class="vp-k">Shopify &middot; Jul MTD</div><div class="vp-v">$122k</div><div class="vp-d" style="color:#B5493B;">&#8595; 1.6% YoY</div></div>
@@ -696,7 +717,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
       </div>
     </div>
 
-    <p class="vstack-note sr">Powered by your live stack &#8212; <b>Shopify &middot; QuickBooks &middot; ShipHero &middot; Triple Whale &middot; Plaid</b>. No single tool sees all five. Picasso ai does.</p>
+    <p class="vstack-note sr">Powered by your live stack: <b>Shopify &middot; QuickBooks &middot; ShipHero &middot; Triple Whale &middot; Plaid</b>. No single tool sees all five. Picasso ai does.</p>
       </div>
     </div>
   </div>
@@ -837,7 +858,7 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
       <div class="phil-item sr sr-delay-3">
         <div class="phil-item-num">04</div>
         <div class="phil-item-title">The math is always right.</div>
-        <div class="phil-item-body">Every number Picasso surfaces is calculated from your actual data, never estimated by AI, never approximated. Python handles all the math. Picasso ai handles the meaning. You never have to wonder if the numbers are real.</div>
+        <div class="phil-item-body">Every number Picasso ai surfaces is calculated from your actual data, never estimated by AI, never approximated. Python handles all the math. Picasso ai handles the meaning. You never have to wonder if the numbers are real.</div>
       </div>
     </div>
   </div>
@@ -857,6 +878,38 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
   <p class="int-footnote sr">Don't see your platform? More integrations are added every month.<br>Contact us and we will prioritize yours.</p>
 </div>
 </section>
+<!-- BEAT 2: CFO COST ANCHOR -->
+<section class="cfo">
+  <div class="cfo-inner">
+    <h2 class="cfo-title sr">A CFO&#8217;s judgment.<br><em>Without a CFO&#8217;s price.</em></h2>
+    <p class="cfo-lede sr sr-delay-1">Owner-operators have always faced the same choice: fly blind, or pay for financial help most can&#8217;t justify. Picasso ai is the third option.</p>
+
+    <div class="cfo-compare sr sr-delay-2">
+      <div class="cfo-col">
+        <div class="cfo-role">Full-time CFO</div>
+        <div class="cfo-price">$180k+</div>
+        <div class="cfo-per">per year</div>
+        <div class="cfo-note">Plus benefits and equity. Out of reach for most owner-operators.</div>
+      </div>
+      <div class="cfo-col">
+        <div class="cfo-role">Fractional CFO</div>
+        <div class="cfo-price">$2&#8211;5k</div>
+        <div class="cfo-per">per month</div>
+        <div class="cfo-note">A few hours of attention. Not watching your numbers every night.</div>
+      </div>
+      <div class="cfo-col cfo-you">
+        <div class="cfo-role">Picasso ai</div>
+        <div class="cfo-price">$500</div>
+        <div class="cfo-per">per month &middot; works every night</div>
+        <div class="cfo-note">Reads every transaction, every night. Tells you exactly what to do next.</div>
+      </div>
+    </div>
+
+    <p class="cfo-kicker sr sr-delay-2">$6,000 a year. A single good call pays for it, <b>with room to spare.</b></p>
+    <p class="cfo-disc sr sr-delay-2">CFO and fractional CFO figures are typical U.S. market ranges, shown for comparison. Picasso ai from $500/mo.</p>
+  </div>
+</section>
+
 <section class="pricing" id="pricing">
   <div class="pricing-eyebrow sr">Simple pricing</div>
   <h2 class="pricing-title sr sr-delay-1">One clear price.<br><em>No surprises.</em></h2>
