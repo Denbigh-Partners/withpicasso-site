@@ -492,6 +492,44 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
 .vphone .vp-pbar{height:4px;background:var(--beige);border-radius:100px;margin-top:4px;position:relative;}
 .vphone .vp-pbar i{position:absolute;left:0;top:0;bottom:0;border-radius:100px;background:var(--green);}
 
+/* ── VERTICAL SCENARIOS ── */
+.scn{padding:150px 40px;background:var(--cream);border-top:1px solid var(--ink-12);}
+.scn-inner{max-width:1040px;margin:0 auto;}
+.scn-eyebrow{font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--green);text-align:center;margin-bottom:28px;}
+.scn-title{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(38px,5vw,62px);line-height:1.04;letter-spacing:-.02em;color:var(--ink);text-align:center;}
+.scn-title em{font-style:italic;color:var(--green);}
+.scn-sub{font-family:'Jost',sans-serif;font-size:15px;font-weight:300;color:var(--ink-60);max-width:620px;margin:28px auto 0;line-height:1.8;text-align:center;}
+.scn-tabs{display:flex;gap:10px;justify-content:center;margin:52px 0 44px;flex-wrap:wrap;}
+.scn-tab{padding:10px 20px;border-radius:100px;border:1px solid var(--ink-12);font-family:'Jost',sans-serif;font-size:13px;letter-spacing:.04em;color:var(--ink-40);background:transparent;display:flex;align-items:center;gap:9px;cursor:pointer;transition:all .4s var(--ease);}
+.scn-tab:hover{border-color:var(--ink-35);color:var(--ink-60);}
+.scn-tab.active{background:var(--ink);color:var(--cream);border-color:var(--ink);}
+.scn-stage{position:relative;min-height:440px;}
+.scn-card{display:none;}
+.scn-card.active{display:block;animation:scnIn .6s var(--ease);}
+@keyframes scnIn{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+.scn-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:0;border:1px solid var(--ink-12);border-radius:20px;overflow:hidden;background:#fff;}
+.scn-left{padding:52px 48px;}
+.scn-right{padding:52px 48px;background:var(--ink);color:var(--cream);display:flex;flex-direction:column;justify-content:center;}
+.scn-vert{font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--green);margin-bottom:22px;}
+.scn-scene{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:28px;line-height:1.3;letter-spacing:-.01em;color:var(--ink);margin-bottom:28px;}
+.scn-dig{font-family:'Jost',sans-serif;font-size:14.5px;font-weight:300;line-height:1.85;color:var(--ink-60);margin-bottom:0;}
+.scn-dig b{color:var(--ink);font-weight:500;}
+.scn-penny{margin-top:30px;padding-top:26px;border-top:1px solid var(--ink-12);display:flex;gap:13px;align-items:flex-start;}
+.scn-penny-dot{width:30px;height:30px;border-radius:8px;background:var(--green-light);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:17px;color:var(--green-dark);font-style:italic;}
+.scn-penny-txt{font-family:'Jost',sans-serif;font-size:14px;font-weight:300;line-height:1.75;color:var(--ink);}
+.scn-penny-txt b{color:var(--green-dark);font-weight:500;}
+.scn-stake-label{font-family:'Jost',sans-serif;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(216,255,224,.55);margin-bottom:18px;}
+.scn-stake-num{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(46px,6vw,72px);line-height:1;letter-spacing:-.03em;color:#fff;}
+.scn-stake-num em{font-style:italic;color:var(--green-light);}
+.scn-stake-cap{font-family:'Jost',sans-serif;font-size:14px;font-weight:300;line-height:1.75;color:rgba(216,255,224,.75);margin-top:20px;}
+.scn-foot{font-family:'Jost',sans-serif;font-size:13px;font-weight:300;color:var(--ink-40);text-align:center;margin-top:40px;line-height:1.7;}
+@media(max-width:820px){
+  .scn{padding:110px 24px;}
+  .scn-grid{grid-template-columns:1fr;}
+  .scn-left,.scn-right{padding:40px 32px;}
+  .scn-stage{min-height:0;}
+}
+
 /* ── BEAT 1: COST OF FLYING BLIND ── */
 .blind{padding:140px 40px;text-align:center;background:var(--cream);border-top:1px solid var(--ink-12);}
 .blind-inner{max-width:720px;margin:0 auto;}
@@ -732,6 +770,155 @@ footer{background:var(--ink);padding:80px 64px;display:flex;flex-direction:colum
     <p class="blind-foot sr sr-delay-2">Every month without answers is money these decisions cost you quietly.</p>
   </div>
 </section>
+
+<!-- VERTICAL SCENARIOS -->
+<section class="scn reveal" id="scenarios">
+  <div class="scn-inner">
+    <div class="scn-eyebrow sr">What Picasso ai finds</div>
+    <h2 class="scn-title sr sr-delay-1">The money is already<br>in your <em>data.</em></h2>
+    <p class="scn-sub sr sr-delay-2">The finance team, the operations lead, and the data analyst most owner-operators could never afford &mdash; reading every transaction, every night, and telling you in plain English what to do next. Here&#8217;s what that looks like in your world.</p>
+
+    <div class="scn-tabs sr sr-delay-3">
+        <button class="scn-tab active" data-scn="retail">Retail</button>
+        <button class="scn-tab" data-scn="ecom">Ecommerce / DTC</button>
+        <button class="scn-tab" data-scn="construction">Construction / Hardware</button>
+        <button class="scn-tab" data-scn="restaurants">Restaurants</button>
+        <button class="scn-tab" data-scn="hvac">HVAC</button>
+        <button class="scn-tab" data-scn="dental">Dental / Wellness</button>
+    </div>
+
+    <div class="scn-stage sr">
+      <div class="scn-card active" data-card="retail">
+        <div class="scn-grid">
+          <div class="scn-left">
+            <div class="scn-vert">Retail &middot; Independent storefront</div>
+            <div class="scn-scene">Your Westside store&#8217;s Tuesday traffic is down 18% since a competitor opened six blocks away &mdash; and you&#8217;re the last to know.</div>
+            <p class="scn-dig">Picasso ai reads it off your POS before you feel it in the till. Foot traffic down <b>18% on Tuesdays and Wednesdays</b>, holding steady on weekends. Average basket flat, so it&#8217;s bodies, not spend. Cross-referenced against your calendar, the slide starts the week the new shop opened. At your blended margin, those two soft days are <b>$6,200 a month</b> walking past your door.</p>
+            <div class="scn-penny">
+              <div class="scn-penny-dot">P</div>
+              <div class="scn-penny-txt">Penny flags the pattern the morning it crosses the threshold &mdash; and lays out the midweek play before it becomes a quarter you can&#8217;t explain.</div>
+            </div>
+          </div>
+          <div class="scn-right">
+            <div class="scn-stake-label">Quietly bleeding</div>
+            <div class="scn-stake-num">$6,200<br><em>a month.</em></div>
+            <p class="scn-stake-cap">Caught in week two instead of quarter two.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scn-card" data-card="ecom">
+        <div class="scn-grid">
+          <div class="scn-left">
+            <div class="scn-vert">Ecommerce &middot; $3.5M DTC brand</div>
+            <div class="scn-scene">Revenue looks healthy. Your bank balance doesn&#8217;t. The gap is sitting on a shelf, and nothing on your dashboard is pointing at it.</div>
+            <p class="scn-dig">Picasso ai runs your cash conversion cycle across Shopify, your 3PL, and the bank feed. Inventory sits <b>197 days</b> before it sells. Payables clear in 34. That spread is a <b>220-day cash cycle</b> &mdash; and buried in it, <b>$220,400</b> trapped in SKUs that haven&#8217;t moved in two and a half years. Money you already spent, frozen, while you float payroll on a line of credit.</p>
+            <div class="scn-penny">
+              <div class="scn-penny-dot">P</div>
+              <div class="scn-penny-txt">Penny names the exact SKUs, the markdown that frees the most cash fastest, and what that does to your runway &mdash; before your next PO goes out.</div>
+            </div>
+          </div>
+          <div class="scn-right">
+            <div class="scn-stake-label">Trapped in inventory</div>
+            <div class="scn-stake-num">$220,400<br><em>freed.</em></div>
+            <p class="scn-stake-cap">Without selling a single new thing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scn-card" data-card="construction">
+        <div class="scn-grid">
+          <div class="scn-left">
+            <div class="scn-vert">Construction &amp; Hardware &middot; $4.2M builder</div>
+            <div class="scn-scene">You&#8217;re winning bids and still feel broke at month-end. Your price book is quoting last year&#8217;s world.</div>
+            <p class="scn-dig">Picasso ai lines your estimates up against what you&#8217;re actually paying. Your price book is <b>two years old</b>. Materials are up <b>19%</b>, labor up <b>14%</b>, and you&#8217;re still bidding off the old numbers. Across your open and pipeline work, that&#8217;s roughly <b>$180,000 of margin</b> you&#8217;re quoting away one job at a time &mdash; winning the bid and losing the year.</p>
+            <div class="scn-penny">
+              <div class="scn-penny-dot">P</div>
+              <div class="scn-penny-txt">Penny reprices the book against live cost, shows the margin on every live job, and flags the quotes bleeding you before you sign them.</div>
+            </div>
+          </div>
+          <div class="scn-right">
+            <div class="scn-stake-label">Margin quoted away</div>
+            <div class="scn-stake-num">$180,000<br><em>recovered.</em></div>
+            <p class="scn-stake-cap">On $4.2M of work you&#8217;re already doing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scn-card" data-card="restaurants">
+        <div class="scn-grid">
+          <div class="scn-left">
+            <div class="scn-vert">Restaurants &middot; Neighborhood kitchen</div>
+            <div class="scn-scene">A new spot opened down the street and your gut says drop prices to compete. Your numbers say that&#8217;s the one thing you can&#8217;t afford.</div>
+            <p class="scn-dig">Picasso ai reads your POS night by night. Tuesday covers down <b>22% since August</b>, weekends untouched &mdash; a midweek-regular problem, not a pricing one. Meanwhile food cost crept to <b>31%</b> on three dishes doing most of your volume. Cut prices across the board to chase the new place and you hand back the <b>64% margin</b> that keeps the lights on.</p>
+            <div class="scn-penny">
+              <div class="scn-penny-dot">P</div>
+              <div class="scn-penny-txt">Penny isolates the three dishes bleeding margin, models a midweek move that protects the check, and tells you where <i>not</i> to discount.</div>
+            </div>
+          </div>
+          <div class="scn-right">
+            <div class="scn-stake-label">Margin at risk</div>
+            <div class="scn-stake-num">64%<br><em>protected.</em></div>
+            <p class="scn-stake-cap">The discount that would&#8217;ve sunk the quarter, avoided.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scn-card" data-card="hvac">
+        <div class="scn-grid">
+          <div class="scn-left">
+            <div class="scn-vert">HVAC &middot; Residential service</div>
+            <div class="scn-scene">You&#8217;ve got 31 days of cash and a spring shoulder season ahead. The question is whether you make it to summer without touching the credit line.</div>
+            <p class="scn-dig">Picasso ai models your cash against <b>receivables aging and 36 years of seasonal demand</b>, not a gut feel. On today&#8217;s collection pace, you run dry in <b>early May</b> &mdash; three weeks before install season bails you out. The fix isn&#8217;t a loan. Tighten net terms by <b>6 days</b> on your two slowest-paying commercial accounts and the dry spell disappears.</p>
+            <div class="scn-penny">
+              <div class="scn-penny-dot">P</div>
+              <div class="scn-penny-txt">Penny shows the runway, names the accounts to chase first, and drops the odds of a cash crunch below 1 in 20 &mdash; before you draw a dollar of debt.</div>
+            </div>
+          </div>
+          <div class="scn-right">
+            <div class="scn-stake-label">Runway</div>
+            <div class="scn-stake-num">31 &rarr; 0<br><em>crunch avoided.</em></div>
+            <p class="scn-stake-cap">Six days of terms instead of an emergency line of credit.</p>
+          </div>
+        </div>
+      </div>
+      <div class="scn-card" data-card="dental">
+        <div class="scn-grid">
+          <div class="scn-left">
+            <div class="scn-vert">Dental &amp; Wellness &middot; Multi-op practice</div>
+            <div class="scn-scene">You mark up every supply 50% and assume you&#8217;re running a 50% margin. You&#8217;re not &mdash; and the gap is quietly funding everyone but you.</div>
+            <p class="scn-dig">Picasso ai ties your supply spend to production and finds the arithmetic trap: a <b>50% markup is a 33% margin</b>, not 50%. On your consumables run rate, that misread is leaving money on the table every single month &mdash; and benchmarked against your chair utilization, you&#8217;re pricing <b>20 points under</b> comparable practices in your market.</p>
+            <div class="scn-penny">
+              <div class="scn-penny-dot">P</div>
+              <div class="scn-penny-txt">Penny corrects the markup math, reprices to your real cost, and shows the monthly swing &mdash; the kind of fix a practice usually only gets from a consultant it can&#8217;t afford.</div>
+            </div>
+          </div>
+          <div class="scn-right">
+            <div class="scn-stake-label">Hidden in markup math</div>
+            <div class="scn-stake-num">33% &rarr; 50%<br><em>real margin.</em></div>
+            <p class="scn-stake-cap">Twenty points of pricing you didn&#8217;t know you&#8217;d given away.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="scn-foot">Figures are representative of outcomes Picasso ai&#8217;s team has delivered for real owner-operators. Your numbers come from your own data.</p>
+  </div>
+</section>
+
+<!-- VERTICAL SCENARIOS TAB SWITCHER -->
+<script>
+(function(){
+  var tabs = document.querySelectorAll('.scn-tab');
+  var cards = document.querySelectorAll('.scn-card');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var k = t.getAttribute('data-scn');
+      tabs.forEach(function(x){x.classList.remove('active');});
+      t.classList.add('active');
+      cards.forEach(function(c){
+        c.classList.toggle('active', c.getAttribute('data-card') === k);
+      });
+    });
+  });
+})();
+</script>
 
 <!-- HOW IT WORKS -->
 <section class="how" id="product">
